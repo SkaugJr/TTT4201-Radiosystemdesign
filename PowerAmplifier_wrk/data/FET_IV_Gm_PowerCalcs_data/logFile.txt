@@ -1,0 +1,1160 @@
+
+hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
+    (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
+
+
+***** Simulation started at Thu Sep 12 08:37:54 2024
+      Running on host: "LAPTOP-61MDKHI1"
+      In Directory: "C:\Github\TTT4201-Radiosystemdesign\PowerAmplifier_wrk\data"
+      Process ID: 2416
+
+
+CT Sweep1[1] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>   VGS=(-3->-2)
+
+DC Sweep1[1].DC1[1/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[1/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[1/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[1/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-3 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[2/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[2/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[2/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[2/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.9 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[3/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[3/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[3/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[3/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.8 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[4/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[4/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[4/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[4/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.7 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[5/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[5/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[5/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[5/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.6 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[6/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[6/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[6/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[6/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.5 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[7/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[7/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[7/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[7/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.4 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[8/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[8/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[8/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[8/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.3 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[9/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[9/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[9/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[9/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.2 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[10/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[10/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[10/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[10/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2.1 VDS=32  freq=2.4 GHz
+
+
+DC Sweep1[1].DC1[11/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2  VDS=(0->32)
+.................................
+
+CT Sweep1[1].Sweep2[11/11] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2  VDS=(0->32)
+
+AC Sweep1[1].Sweep2[11/11].AC1[1/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=0  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[2/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=1  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[3/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=2  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[4/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=3  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[5/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=4  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[6/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=5  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[7/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=6  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[8/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=7  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[9/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=8  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[10/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=9  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[11/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=10  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[12/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=11  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[13/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=12  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[14/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=13  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[15/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=14  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[16/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=15  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[17/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=16  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[18/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=17  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[19/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=18  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[20/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=19  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[21/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=20  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[22/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=21  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[23/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=22  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[24/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=23  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[25/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=24  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[26/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=25  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[27/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=26  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[28/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=27  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[29/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=28  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[30/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=29  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[31/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=30  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[32/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=31  freq=2.4 GHz
+
+
+AC Sweep1[1].Sweep2[11/11].AC1[33/33] <PowerAmplifier_lib:FET_IV_Gm_PowerCalcs:schematic>  VGS=-2 VDS=32  freq=2.4 GHz
+
+
+Resource usage:
+  Total stopwatch time     =     1.00 seconds.
+

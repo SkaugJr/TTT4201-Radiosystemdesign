@@ -1,0 +1,8 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE PowerAmplifier_lib PowerAmplifier_lib
+ASSIGN PowerAmplifier_lib libMode shared
+INCLUDE ../ADSbibs/MA_RFP_ADS_v1p5/lib.defs
+INCLUDE ../ADSbibs/muRataLibWeb_C_EIA_confidential/lib.defs
+INCLUDE ../ADSbibs/JTI_CAPS_S_Series/lib.defs
+INCLUDE ../ADSbibs/Johanson_lib_v1.0/lib.defs
