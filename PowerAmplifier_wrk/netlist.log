@@ -1,49 +1,102 @@
-; Top Design: "PowerAmplifier_lib:SP_NF_GainMatchK:schematic"
+; Top Design: "PowerAmplifier_lib:Harmonic-Balance:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PowerAmplifier_lib:SP_NF_GainMatchK:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PowerAmplifier_lib:Harmonic-Balance:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: PowerAmplifier_lib
+; Cell Name: IMC
+; View Name: schematic
+define IMC ( "RF-in"  "RF-out" ) 
+;parameters 
+#uselib "ckt" , "TLOC"
+TLOC:TL2  "RF-in" 0 Z=50.0 Ohm E=76.957 F=2.4 GHz 
+TLIN:TL1  "RF-in" "RF-out" Z=50.0 Ohm E=21.650 F=2.4 GHz 
+end IMC
+
+; Library Name: PowerAmplifier_lib
+; Cell Name: OMC
+; View Name: schematic
+define OMC ( Load  PA ) 
+;parameters 
+TLIN:TL1  PA Load Z=50.0 Ohm E=28.462 F=2.4 GHz 
+#uselib "ckt" , "TLOC"
+TLOC:TL2  Load 0 Z=50.0 Ohm E=68.917 F=2.4 GHz 
+end OMC
+
 ; Library Name: PowerAmplifier_lib
 ; Cell Name: PA
 ; View Name: schematic
 define PA ( "DC-VD"  "DC-VG"  "RF-in"  "RF-out" ) 
 ;parameters 
 #uselib "MA_RFP_ADS_v1p5" , "CG2H40010F_v2"
-"CG2H40010F_v2":X1  N__2 N__6 0 Rth=7.83 Tbase=25 VDN=28 x1=1 x2=1 
-R:R1  N__5 N__2 R=27 Ohm Noise=yes 
-C:C1  N__5 N__2 C=1.0 pF 
-Short:DC_Feed1  N__5 "DC-VG" Mode=-1 
-Short:DC_Feed2  "DC-VD" N__6 Mode=-1 
-Short:DC_Block1  "RF-in" N__5 Mode=1 
-Short:DC_Block2  N__6 "RF-out" Mode=1 
+"CG2H40010F_v2":X1  N__2 "DC-VD" 0 Rth=7.83 Tbase=25 VDN=28 x1=1 x2=1 
+R:R1  "DC-VG" N__2 R=100 Ohm Noise=yes 
+C:C1  "DC-VG" N__2 C=5.6 pF 
+C:C2  "RF-in" "DC-VG" C=100 nF 
+C:C3  "DC-VD" "RF-out" C=100 nF 
 end PA
 
-S_Param:SP1 CalcS=yes CalcGroupDelay=yes GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
-SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+; Library Name: PowerAmplifier_lib
+; Cell Name: VD-DC-Feed
+; View Name: schematic
+define "VD-DC-Feed" ( "DC-RF"  "DC-VD" ) 
+;parameters 
+TLIN:TL1  "DC-VD" "DC-RF" Z=50.0 Ohm E=90 F=2.4 GHz 
+#uselib "ckt" , "TLOC"
+TLOC:TL2  "DC-VD" 0 Z=50.0 Ohm E=90 F=2.4 GHz 
+C:C1  0 "DC-VD" C=1.0 pF 
+C:C2  0 "DC-VD" C=100 nF 
+C:C3  0 "DC-VD" C=1 uF 
+C:C4  0 "DC-VD" C=10 uF 
+end "VD-DC-Feed"
 
-SweepPlan: SP1_stim Start=0.1 GHz Stop=6 GHz Step=0.05 GHz 
+; Library Name: PowerAmplifier_lib
+; Cell Name: VG-DC-Feed
+; View Name: schematic
+define "VG-DC-Feed" ( "DC-RF"  "DC-VG" ) 
+;parameters 
+TLIN:TL1  "DC-VG" "DC-RF" Z=50.0 Ohm E=90 F=2.4 GHz 
+#uselib "ckt" , "TLOC"
+TLOC:TL2  "DC-VG" 0 Z=50.0 Ohm E=90 F=2.4 GHz 
+C:C1  0 "DC-VG" C=1.0 pF 
+C:C2  0 "DC-VG" C=100 nF 
+C:C3  0 "DC-VG" C=1 uF 
+C:C4  0 "DC-VG" C=10 uF 
+end "VG-DC-Feed"
 
-OutputPlan:SP1_Output \
+PA:X1  N__2 N__1 N__3 N__0 
+IMC:X2  N__4 N__3 
+OMC:X3  V_out N__0 
+"VG-DC-Feed":X4  N__1 N__9 
+"VD-DC-Feed":X5  N__2 N__11 
+V_Source:SRC1  N__11 0 Type="V_DC" Vdc=28 V SaveCurrent=1 
+V_Source:SRC2  N__9 0 Type="V_DC" Vdc=-2.8 V SaveCurrent=1 
+Port:Term1  V_out 0 Num=1 Z=50 Ohm Noise=yes 
+Port:PORT2  N__4 0 Num=2 Z=50 Ohm P[1]=polar(dbmtow(P_in),0) Freq[1]=2.4 GHz    Noise=yes Pac=polar(dbmtow(0),0) LimitPhaseNoiseToCarrier=no 
+
+P_in=-10
+HB:HB1 MaxOrder=4 Freq[1]=2.4 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" 
+
+OutputPlan:HB1_Output \
       Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
       UseEquationNestLevel=yes \
       EquationNestLevel=2 \
-      EquationName[1]="Z0" \
       UseSavedEquationNestLevel=yes \
-      SavedEquationNestLevel=2
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
 
-#load "python","LinearCollapse"
-Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=2.4 GHz Order[1]=5 
 
-Z0=50
-Port:Term1  N__1 0 Num=1 Z=Z0 Noise=yes 
-Port:Term2  N__2 0 Num=2 Z=Z0 Noise=yes 
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
 
-Options:Options1 Temp=16.85 Tnom=25 TopologyCheck=yes ForceS_Params=yes V_RelTol=1e-6  \
-I_RelTol=1e-6 GiveAllWarnings=yes MaxWarnings=10 ForceM_Params=yes DC_ReadInitialGuess=no  \
-DC_WriteFinalSolution=no TopologyCheckMessages=no GPU=no doDeltaAC=no ReduceSPort=no  \
-ReduceSPortRatio=0.5 WarnSOA=yes MaxWarnSOA=5 Census=no MinNodalR=1e-2 Ohm  \
-LargeCapThreshold=1e-3 F EnableAssertChecks=no EnableSpareRemoval=yes 
-
-aele mu_load=mu(S);mu_source=mu_prime(S);match_input=sm_gamma1(S);Source_stabcir=s_stab_circle(S,51);Load_stabcir=l_stab_circle(S,51);
-PA:X1  N__6 N__0 N__1 N__2 
-V_Source:SRC1  N__0 0 Type="V_DC" Vdc=-2.8 V SaveCurrent=1 
-V_Source:SRC2  N__6 0 Type="V_DC" Vdc=28 V SaveCurrent=1 

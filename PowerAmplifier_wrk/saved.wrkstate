@@ -1,7 +1,7 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
     <Windows>
-        <Schematic lib="PowerAmplifier_lib" geom="1,0,0,39,58,1536,816,1920,1080" height="816" cell="PA" x1="38" width="1536" y1="20" view="schematic"/>
+        <Schematic height="816" y1="114" x1="44" geom="1,0,0,45,152,1536,816,1920,1080" lib="PowerAmplifier_lib" width="1536" cell="S-Parameter" view="schematic"/>
     </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>

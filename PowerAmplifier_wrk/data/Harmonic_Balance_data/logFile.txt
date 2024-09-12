@@ -1,0 +1,51 @@
+
+hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
+    (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
+
+
+***** Simulation started at Thu Sep 12 14:04:21 2024
+      Running on host: "LAPTOP-61MDKHI1"
+      In Directory: "C:\Github\TTT4201-Radiosystemdesign\PowerAmplifier_wrk\data"
+      Process ID: 8568
+
+
+HB HB1[1] <PowerAmplifier_lib:Harmonic-Balance:schematic>
+Pt DC convergence is used.
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 539.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	27.6162 mA  	100.0             
+1.0 	137.436 uA  	100.0	373.62 uV    
+1.1 	478.858 nA  	100.0	594.507 nV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X1.X1.X1.vdi            4.758e-06       >       1.610e-06
+X1.X1.X1.N__5           4.758e-06       >       1.610e-06
+X1.X1.X1.Q1.dRF         4.758e-06       >       1.610e-06
+X1.X1.N__17             4.724e-06       >       1.588e-06
+X1.X1.X1.dT             1.640e-06       >       1.279e-06
+
+o Number of waveforms violating the HB truncation error check:
+        6 out of 19 waveforms.
+o Estimated max HB truncation error: 4.758e-06 @ waveform X1.X1.X1.N__5 .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.610e-06 for this waveform.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     1.00 seconds.
+
