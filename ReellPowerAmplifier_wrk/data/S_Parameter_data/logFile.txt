@@ -3,14 +3,14 @@ hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
     (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
 
 
-***** Simulation started at Fri Sep 13 12:09:26 2024
-      Running on host: "LAPTOP-61MDKHI1"
-      In Directory: "C:\Github\TTT4201-Radiosystemdesign\ReellPowerAmplifier_wrk\data"
-      Process ID: 17008
+***** Simulation started at Fri Sep 13 19:44:10 2024
+      Running on host: "KollisPC"
+      In Directory: "C:\GitHub\TTT4201-Radiosystemdesign\ReellPowerAmplifier_wrk\data"
+      Process ID: 27284
 
 Pt DC convergence is used.
 
-SP SP1[1] <PowerAmplifier_lib:S-Parameter:schematic>   freq=(100 MHz->10 GHz)
+SP SP1[1] <PowerAmplifier_lib:S-Parameter:schematic>   freq=(100 MHz->6 GHz)
 Warning detected by hpeesofsim during SP analysis `SP1'.
     Data in the Touchstone file `C:/github/ttt4201-radiosystemdesign/adsbibs/jti_caps_s_series/circuit/data/251R14S820_H-SER.s2p'
     does not cover the requested value of `freq'.
@@ -36,5 +36,5 @@ Warning detected by hpeesofsim during circuit set up.
 
 
 Resource usage:
-  Total stopwatch time     =     4.03 seconds.
+  Total stopwatch time     =     1.42 seconds.
 

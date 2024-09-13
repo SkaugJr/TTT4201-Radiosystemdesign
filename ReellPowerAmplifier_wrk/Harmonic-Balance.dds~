@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-09-13T07:24:47Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-09-13T17:58:42Z");
 	set(ddoId, "FileCreatedDateAndTime", "2024-09-12T12:04:22Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
@@ -98,7 +98,7 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -300);
+		 set(axisID, "MinValue", -250);
 		 set(axisID, "MaxValue", 50);
 		 set(axisID, "StepSize", 50);
 		 set(axisID, "Logarithmic", FALSE);
@@ -203,7 +203,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "Right", 5600);
 	set(goId0, "Bottom", 7504);
 	set(goId0, "Left", 1247);
-	set(goId0, "Top", 4341);
+	set(goId0, "Top", 4361);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -218,7 +218,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 503);
 	set(goId0, "RightMargin", 100);
-	set(goId0, "TopMargin", 284);
+	set(goId0, "TopMargin", 264);
 	set(goId0, "BottomMargin", 504);
 // Plot Title...
 	set(goId0, "Title", "");
@@ -263,7 +263,7 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", 10);
+		 set(axisID, "MinValue", 5);
 		 set(axisID, "MaxValue", 45);
 		 set(axisID, "StepSize", 5);
 		 set(axisID, "Logarithmic", FALSE);
@@ -357,7 +357,7 @@ traceID = get_new(goId0, "Trace", "plot_vs(dBm(V_out[::,1]), P_in)", "X Axis", "
 		}
 		set(traceID, "TraceLabelOffset", 100);
 	}
-markerID = get_new(goId0, "LineMarkerNew", "m1", "2.000533e+01", 0, "3313", "", 1, 32);
+markerID = get_new(goId0, "LineMarkerNew", "m1", "2.200000e+01", 0, "3500", "", 1, 32);
 // Base Class Object:
 	set(markerID, "Name", "");
 	set(markerID, "Uid", 573089260);
@@ -459,7 +459,7 @@ goId0 = get_new(pageId, "Plot");
 // Graphical Object:
 	set(goId0, "Right", 11725);
 	set(goId0, "Bottom", 7379);
-	set(goId0, "Left", 7372);
+	set(goId0, "Left", 7277);
 	set(goId0, "Top", 4375);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
@@ -473,7 +473,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 503);
+	set(goId0, "LeftMargin", 598);
 	set(goId0, "RightMargin", 100);
 	set(goId0, "TopMargin", 125);
 	set(goId0, "BottomMargin", 504);
@@ -520,9 +520,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", 14);
-		 set(axisID, "MaxValue", 22);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", 13.5);
+		 set(axisID, "MaxValue", 17);
+		 set(axisID, "StepSize", 0.5);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -627,7 +627,7 @@ traceID = get_new(goId0, "Trace", "plot_vs(Gain, P_in)", "X Axis", "Y Axis");
 ddWinId = get_new(ddsId, "Window", 75, 231, 1196, 717);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 358992539);
-	set(ddWinId, "PageViewRect_358992539", list(75, 8838, 14287, 666));
+	set(ddWinId, "PageViewRect_358992539", list(-1613, 7240, 12641, -970));
 	set(ddWinId, "Frame", list(75, 231, 1196, 717));
 	set(ddWinId, "Maximized", FALSE);
 	set(ddWinId, "ForegroundColor", 0);

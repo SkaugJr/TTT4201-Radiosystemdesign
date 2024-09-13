@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="20" Version="100">
+<ADSWorkspace Revision="21" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -63,7 +63,6 @@
         <Library Name="MA_RFP_ADS_v1p5" />
         <Library Name="muRataLibWeb_C_tech" />
         <Library Name="muRataLibWeb_C" />
-        <Library Name="JTI_CAPS_S_Series" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
         <Library Name="Johanson_lib" />
         <ConfigFile Name="dds.cfg" />
@@ -97,13 +96,15 @@
         <Data_Files Name="Harmonic_Balance.ds" />
         <Data_Files Name="Harmonic_Balance_data\logFile.txt" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
-        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%S#2d%Parameter_schematic\annotation_1.xml" />
         <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%S#2d%Parameter_schematic\annotation_map.xml" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
         <Preferences Name="ads_rflib_lay.prf" />
         <Preferences Name="ads_tlines_lay.prf" />
         <Preferences Name="muRataLibWeb_C_lay.prf" />
+        <LibDM Name="JTI_CAPS_S_Series:data.dm" />
+        <Preferences Name="ads_simulation_lay.prf" />
+        <Preferences Name="ads_sources_lay.prf" />
         <Cell Name="PowerAmplifier_lib:Harmonic-Balance" />
         <Cell Name="PowerAmplifier_lib:IMC" />
         <Cell Name="PowerAmplifier_lib:IV-Curves" />
@@ -112,6 +113,10 @@
         <Cell Name="PowerAmplifier_lib:S-Parameter" />
         <Cell Name="PowerAmplifier_lib:VD-DC-Feed" />
         <Cell Name="PowerAmplifier_lib:VG-DC-Feed" />
+        <Library Name="JTI_CAPS_S_Series" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
+        <Library Name="JTI_Inductors_L14C_Series" />
+        <LibDM Name="JTI_Inductors_L14C_Series:data.dm" />
+        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%S#2d%Parameter_schematic\annotation_1.xml" />
     </Workspace>
 </ADSWorkspace>
