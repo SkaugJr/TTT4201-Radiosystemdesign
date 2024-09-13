@@ -1,0 +1,160 @@
+; Top Design: "PowerAmplifier_lib:S-Parameter:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PowerAmplifier_lib:S-Parameter:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: PowerAmplifier_lib
+; Cell Name: IMC
+; View Name: schematic
+define IMC ( "RF-in"  "RF-out" ) 
+;parameters 
+model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL3  N__3 "RF-out" Subst="MSub1" W=W mm L=L1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLOC2:TL4  N__5 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee1  "RF-in" N__3 N__5 Subst="MSub1" W1=W mm W2=W mm W3=W mm 
+
+W=2.89
+L1=3.52949 opt{ 3 to 5 }
+L2=14.321 opt{ 14 to 16 }
+end IMC
+
+; Library Name: PowerAmplifier_lib
+; Cell Name: OMC
+; View Name: schematic
+define OMC ( Load  PA ) 
+;parameters 
+model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+
+W=2.89
+L1=5.00415 opt{ 5 to 6 }
+L2=12.5003 opt{ 12.5 to 14 }
+MLOC2:TL4  N__7 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL3  PA N__4 Subst="MSub1" W=W mm L=L1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee1  N__4 Load N__7 Subst="MSub1" W1=W mm W2=W mm W3=W mm 
+end OMC
+
+; Library Name: PowerAmplifier_lib
+; Cell Name: PA
+; View Name: schematic
+define PA ( "DC-VD"  "DC-VG"  "RF-in"  "RF-out" ) 
+;parameters 
+#uselib "MA_RFP_ADS_v1p5" , "CG2H40010F_v2"
+"CG2H40010F_v2":X1  N__2 "DC-VD" 0 Rth=7.83 Tbase=25 VDN=28 x1=1 x2=1 
+R:R1  "DC-VG" N__2 R=100 Ohm Noise=yes 
+C:C1  "DC-VG" N__2 C=5.6 pF 
+C:C3  "DC-VD" "RF-out" C=100 nF 
+C:C2  "RF-in" "DC-VG" C=100 nF 
+end PA
+
+; Library Name: PowerAmplifier_lib
+; Cell Name: VD-DC-Feed
+; View Name: schematic
+define "VD-DC-Feed" ( "DC-RF"  "DC-VD" ) 
+;parameters 
+model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+
+#ifndef muRataLibWeb_C
+#define muRataLibWeb_C
+; models
+#include "C:/Github/TTT4201-Radiosystemdesign/ADSbibs/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
+#endif
+
+
+MLIN2:TL9  N__1 N__3 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL8  N__8 N__7 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL5  N__9 N__11 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL3  "DC-RF" N__12 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL4  N__13 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MCROSO:Cros1  N__9 N__12 N__18 N__13 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
+MTEE_ADS:Tee5  "DC-VD" N__3 N__14 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
+MTEE_ADS:Tee4  N__1 N__7 N__15 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
+MTEE_ADS:Tee1  N__8 N__11 N__16 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W3 mm 
+#include "C:/Github/TTT4201-Radiosystemdesign/ADSbibs/JTI_CAPS_S_Series//circuit/models/R14S_cktName.net" 
+R14S_cktName:SNP1 0 N__18 File="251R14S820_H-SER.s2p" Temp=25 
+GRM18:C5  0 N__16 PartNumber=900 
+GRM31:C7  0 N__14 PartNumber=545 
+GRM31:C6  0 N__15 PartNumber=456 
+
+L1=17.145
+L2=3.2
+L3=10
+L4=10
+
+W1=2.89
+W2=1.6
+W3=0.8
+W4=1.6
+end "VD-DC-Feed"
+
+; Library Name: PowerAmplifier_lib
+; Cell Name: VG-DC-Feed
+; View Name: schematic
+define "VG-DC-Feed" ( "DC-RF"  "DC-VG" ) 
+;parameters 
+model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+
+#ifndef muRataLibWeb_C
+#define muRataLibWeb_C
+; models
+#include "C:/Github/TTT4201-Radiosystemdesign/ADSbibs/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
+#endif
+
+
+MLIN2:TL3  "DC-RF" N__0 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL4  N__3 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MCROSO:Cros1  N__18 N__0 N__1 N__3 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
+MTEE_ADS:Tee1  N__20 N__10 N__13 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W3 mm 
+#include "C:/Github/TTT4201-Radiosystemdesign/ADSbibs/JTI_CAPS_S_Series//circuit/models/R14S_cktName.net" 
+R14S_cktName:SNP1 0 N__1 File="251R14S820_H-SER.s2p" Temp=25 
+GRM18:C5  0 N__13 PartNumber=900 
+GRM31:C6  0 N__15 PartNumber=456 
+GRM31:C7  0 N__17 PartNumber=545 
+MLIN2:TL5  N__18 N__10 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL8  N__20 N__21 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE_ADS:Tee4  N__12 N__21 N__15 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
+MTEE_ADS:Tee5  "DC-VG" N__19 N__17 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
+MLIN2:TL9  N__12 N__19 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+
+W1=2.89
+W2=1.6
+W3=0.8
+W4=1.6
+
+L1=17.145
+L2=3.2
+end "VG-DC-Feed"
+
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no CalcGroupDelay=yes GroupDelayAperture=1e-4 \
+FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.1 GHz Stop=10 GHz Step=0.05 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      EquationName[1]="Z0" \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+
+Z0=50
+Port:Term1  N__8 0 Num=1 Z=Z0 Noise=yes 
+Port:Term2  N__12 0 Num=2 Z=Z0 Noise=yes 
+V_Source:SRC1  N__0 0 Type="V_DC" Vdc=-2.8 V SaveCurrent=1 
+
+Options:Options1 Temp=16.85 Tnom=25 TopologyCheck=yes ForceS_Params=yes V_RelTol=1e-6  \
+I_RelTol=1e-6 GiveAllWarnings=yes MaxWarnings=10 ForceM_Params=yes DC_ReadInitialGuess=no  \
+DC_WriteFinalSolution=no TopologyCheckMessages=no GPU=no doDeltaAC=no ReduceSPort=no  \
+ReduceSPortRatio=0.5 WarnSOA=yes MaxWarnSOA=5 Census=no MinNodalR=1e-2 Ohm  \
+LargeCapThreshold=1e-3 F EnableAssertChecks=no EnableSpareRemoval=yes 
+
+aele mu_load=mu(S);mu_source=mu_prime(S);match_input=sm_gamma1(S);Source_stabcir=s_stab_circle(S,51);Load_stabcir=l_stab_circle(S,51);
+PA:X1  N__6 N__3 N__1 N__2 
+V_Source:SRC2  N__7 0 Type="V_DC" Vdc=28 V SaveCurrent=1 
+"VD-DC-Feed":X2  N__6 N__7 
+"VG-DC-Feed":X3  N__3 N__0 
+IMC:X4  N__8 N__1 
+OMC:X5  N__12 N__2 

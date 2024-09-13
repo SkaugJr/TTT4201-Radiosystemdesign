@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-09-12T11:56:21Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-09-12T11:56:40Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
 	set(ddoId, "DefaultDataset", "S_Parameter");
@@ -14908,7 +14908,7 @@ goId0 = get_new(pageId, "Text");
 ddWinId = get_new(ddsId, "Window", 92, 96, 1489, 730);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 669265413);
-	set(ddWinId, "PageViewRect_669265413", list(301, 5861, 16078, -1418));
+	set(ddWinId, "PageViewRect_669265413", list(3558, 7692, 19364, 400));
 	set(ddWinId, "PageViewRect_229195906", list(-11545, 9259, 4907, -881));
 	set(ddWinId, "PageViewRect_1789194935", list(-6927, 9775, 9981, -646));
 	set(ddWinId, "PageViewRect_741782586", list(-2947, 19402, 29390, -526));

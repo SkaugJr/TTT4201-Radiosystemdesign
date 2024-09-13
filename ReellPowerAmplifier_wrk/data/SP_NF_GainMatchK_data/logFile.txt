@@ -1,0 +1,30 @@
+
+hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
+    (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
+
+
+***** Simulation started at Thu Sep 12 08:53:56 2024
+      Running on host: "LAPTOP-61MDKHI1"
+      In Directory: "C:\Github\TTT4201-Radiosystemdesign\PowerAmplifier_wrk\data"
+      Process ID: 6868
+
+
+SP SP1[1] <PowerAmplifier_lib:SP_NF_GainMatchK:schematic>   freq=(100 MHz->6 GHz)
+
+Warning detected by hpeesofsim during circuit set up.
+    `X1.X1.X1': Unable to resolve variable(s) or functions(s) in expression ` idi = id.i'
+        id.i
+
+Warning detected by hpeesofsim during circuit set up.
+    `X1.X1.X1': Unable to resolve variable(s) or functions(s) in expression `vdsi=vdi-vsi'
+        vdi
+        vsi
+
+Warning detected by hpeesofsim during circuit set up.
+    `X1.X1.X1': Unable to resolve variable(s) or functions(s) in expression `Tj=dT'
+        dT
+
+
+Resource usage:
+  Total stopwatch time     =     5.42 seconds.
+

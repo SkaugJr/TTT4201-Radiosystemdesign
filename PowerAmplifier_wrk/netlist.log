@@ -17,9 +17,9 @@ end IMC
 ; View Name: schematic
 define OMC ( Load  PA ) 
 ;parameters 
-TLIN:TL1  PA Load Z=50.0 Ohm E=28.462 F=2.4 GHz 
 #uselib "ckt" , "TLOC"
 TLOC:TL2  Load 0 Z=50.0 Ohm E=68.917 F=2.4 GHz 
+TLIN:TL1  PA Load Z=50.0 Ohm E=28.462 F=2.4 GHz 
 end OMC
 
 ; Library Name: PowerAmplifier_lib
@@ -31,8 +31,8 @@ define PA ( "DC-VD"  "DC-VG"  "RF-in"  "RF-out" )
 "CG2H40010F_v2":X1  N__2 "DC-VD" 0 Rth=7.83 Tbase=25 VDN=28 x1=1 x2=1 
 R:R1  "DC-VG" N__2 R=100 Ohm Noise=yes 
 C:C1  "DC-VG" N__2 C=5.6 pF 
-C:C2  "RF-in" "DC-VG" C=100 nF 
 C:C3  "DC-VD" "RF-out" C=100 nF 
+C:C2  "RF-in" "DC-VG" C=100 nF 
 end PA
 
 ; Library Name: PowerAmplifier_lib
@@ -74,7 +74,9 @@ Port:Term1  V_out 0 Num=1 Z=50 Ohm Noise=yes
 Port:PORT2  N__4 0 Num=2 Z=50 Ohm P[1]=polar(dbmtow(P_in),0) Freq[1]=2.4 GHz    Noise=yes Pac=polar(dbmtow(0),0) LimitPhaseNoiseToCarrier=no 
 
 P_in=-10
-HB:HB1 MaxOrder=4 Freq[1]=2.4 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" 
+HB:HB1 MaxOrder=4 Freq[1]=2.4 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 SweepVar="P_in" SweepPlan="HB1_stim" OutputPlan="HB1_Output" 
+
+SweepPlan: HB1_stim Start=-10 Stop=30 Step=1 
 
 OutputPlan:HB1_Output \
       Type="Output" \

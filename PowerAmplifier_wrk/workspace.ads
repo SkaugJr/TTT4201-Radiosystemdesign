@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="10" Version="100">
+<ADSWorkspace Revision="12" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -83,20 +83,30 @@
         <Data_Display Name="S-Parameter.dds" />
         <Data_Display Name="IV-Curves.dds" />
         <Preferences Name="PowerAmplifier_lib_lay.prf" />
-        <Cell Name="PowerAmplifier_lib:IV-Curves" />
-        <Cell Name="PowerAmplifier_lib:PA" />
-        <Cell Name="PowerAmplifier_lib:S-Parameter" />
-        <Cell Name="PowerAmplifier_lib:VG-DC-Feed" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
         <Data_Files Name="S_Parameter_data\logFile.txt" />
-        <Cell Name="PowerAmplifier_lib:VD-DC-Feed" />
-        <Cell Name="PowerAmplifier_lib:IMC" />
-        <Cell Name="PowerAmplifier_lib:OMC" />
         <Dataset Name="S_Parameter.ds" />
-        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%S#2d%Parameter_schematic\annotation_1.xml" />
-        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%S#2d%Parameter_schematic\annotation_map.xml" />
-        <Cell Name="PowerAmplifier_lib:Sample_PA" />
         <Dataset Name="HB1Tone.ds" />
         <Data_Files Name="HB1Tone.ds" />
+        <Data_Display Name="Harmonic-Balance.dds" />
+        <Preferences Name="PowerAmplifier_lib_sch.prf" />
+        <Dataset Name="Harmonic_Balance.ds" />
+        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%Harmonic#2d%Balance_schematic\annotation_1.xml" />
+        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%Harmonic#2d%Balance_schematic\annotation_2.xml" />
+        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%Harmonic#2d%Balance_schematic\annotation_map.xml" />
+        <Data_Files Name="Harmonic_Balance.ds" />
+        <Data_Files Name="Harmonic_Balance_data\logFile.txt" />
+        <LibDM Name="JTI_CAPS_S_Series:data.dm" />
+        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%S#2d%Parameter_schematic\annotation_1.xml" />
+        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%S#2d%Parameter_schematic\annotation_map.xml" />
+        <Cell Name="PowerAmplifier_lib:Harmonic-Balance" />
+        <Cell Name="PowerAmplifier_lib:IMC" />
+        <Cell Name="PowerAmplifier_lib:IV-Curves" />
+        <Cell Name="PowerAmplifier_lib:OMC" />
+        <Cell Name="PowerAmplifier_lib:PA" />
+        <Cell Name="PowerAmplifier_lib:S-Parameter" />
+        <Cell Name="PowerAmplifier_lib:VD-DC-Feed" />
+        <Cell Name="PowerAmplifier_lib:VG-DC-Feed" />
+        <LibDM Name="JTI_CAPS_S_Series:data.dm" />
     </Workspace>
 </ADSWorkspace>
