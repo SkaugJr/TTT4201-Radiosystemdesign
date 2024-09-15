@@ -18,14 +18,15 @@ end CapJT
 ; View Name: schematic
 define IMC ( "RF-in"  "RF-out" ) 
 ;parameters 
-MLIN2:TL6  N__1 0 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL6  N__1 N__6 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+VIA:V1  N__6 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 MLIN2:TL3  N__3 "RF-out" Subst="MSub1" W=W mm L=L1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
 MTEE_ADS:Tee1  "RF-in" N__3 N__1 Subst="MSub1" W1=W mm W2=W mm W3=W mm 
 
 W=2.89
-L1=16.1247 opt{ 16 to 19 }
-L2=4.05159 opt{ 3 to 5 }
+L1=16.0557 opt{ 16 to 19 }
+L2=3.09679 opt{ 3 to 5 }
 end IMC
 
 ; Library Name: PowerAmplifier_lib
@@ -33,12 +34,13 @@ end IMC
 ; View Name: schematic
 define OMC ( Load  PA ) 
 ;parameters 
+VIA:V1  N__3 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 
 W=2.89
-L1=22.0827 opt{ 22 to 25 }
-L2=6.94416 opt{ 5 to 7 }
-MLIN2:TL4  N__7 0 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+L1=22.0202 opt{ 22 to 25 }
+L2=6.01496 opt{ 5 to 7 }
+MLIN2:TL4  N__7 N__3 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
 MLIN2:TL3  PA N__4 Subst="MSub1" W=W mm L=L1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
 MTEE_ADS:Tee1  N__4 Load N__7 Subst="MSub1" W1=W mm W2=W mm W3=W mm 
 end OMC
@@ -49,21 +51,21 @@ end OMC
 define PA ( "DC-VD"  "DC-VG"  "RF-in"  "RF-out" ) 
 ;parameters 
 #uselib "MA_RFP_ADS_v1p5" , "CG2H40010F_v2"
-"CG2H40010F_v2":X1  N__1 N__6 0 Rth=7.83 Tbase=25 VDN=28 x1=1 x2=1 
-R:R1  N__9 N__7 R=33 Ohm tune{ 10 Ohm to 150 Ohm by 10 Ohm } Noise=yes 
-CapJT:Kap1  N__9 N__7 C=9.1 pF tune{ 2.8 pF to 20 pF by 0.56 pF } 
-GRM18:C5  N__10 N__4 PartNumber=900 
-GRM18:C4  N__8 N__11 PartNumber=900 
+"CG2H40010F_v2":X1  N__1 N__16 0 Rth=7.83 Tbase=25 VDN=28 x1=1 x2=1 
+R:R1  N__17 N__19 R=33 Ohm tune{ 10 Ohm to 150 Ohm by 10 Ohm } Noise=yes 
+CapJT:Kap1  N__17 N__19 C=9.1 pF tune{ 2.8 pF to 20 pF by 0.56 pF } 
+GRM18:C5  N__0 N__2 PartNumber=900 
+GRM18:C4  N__5 N__18 PartNumber=900 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
-MTEE_ADS:Tee1  N__11 N__9 "DC-VG" Subst="MSub1" W1=W3 mm W2=W2 mm W3=W1 mm 
+MTEE_ADS:Tee1  N__18 N__17 "DC-VG" Subst="MSub1" W1=W3 mm W2=W2 mm W3=W1 mm 
 
 W1=2.89
 W2=1.6
 W3=0.8
-MLIN2:TL1  N__7 N__1 Subst="MSub1" W=W2 mm L=W2*2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MTEE_ADS:Tee2  N__6 "DC-VD" N__10 Subst="MSub1" W1=W3 mm W2=W1 mm W3=W3 mm 
-MLIN2:TL3  "RF-in" N__8 Subst="MSub1" W=W1 mm L=W1*2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MLIN2:TL2  N__4 "RF-out" Subst="MSub1" W=W1 mm L=W1*2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL1  N__19 N__1 Subst="MSub1" W=W2 mm L=W2*2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee2  N__16 "DC-VD" N__0 Subst="MSub1" W1=W3 mm W2=W1 mm W3=W3 mm 
+MLIN2:TL3  "RF-in" N__5 Subst="MSub1" W=W1 mm L=W1*2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL2  N__2 "RF-out" Subst="MSub1" W=W1 mm L=W1*2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
 end PA
 
 ; Library Name: PowerAmplifier_lib
@@ -71,6 +73,9 @@ end PA
 ; View Name: schematic
 define "VD-DC-Feed" ( "DC-RF"  "DC-VD" ) 
 ;parameters 
+VIA:V1  N__17 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
+VIA:V3  N__20 0 D1=0.4 mm D2=0.4 mm H=1.52 mm T=0.00375 mm 
+CapJT:Kap1  0 N__4 C=82 pF 
 MLIN2:TL10  N__5 "DC-VD" Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 
@@ -86,15 +91,14 @@ MLIN2:TL8  N__8 N__7 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+
 MLIN2:TL5  N__9 N__11 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL3  "DC-RF" N__12 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLOC2:TL4  N__13 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MCROSO:Cros1  N__9 N__12 N__18 N__13 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
+MCROSO:Cros1  N__9 N__12 N__4 N__13 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
 MTEE_ADS:Tee5  N__5 N__3 N__14 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
 MTEE_ADS:Tee4  N__1 N__7 N__15 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
 MTEE_ADS:Tee1  N__8 N__11 N__16 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W3 mm 
-#include "C:/GitHub/TTT4201-Radiosystemdesign/ADSbibs/JTI_CAPS_S_Series//circuit/models/R14S_cktName.net" 
-R14S_cktName:SNP1 0 N__18 File="251R14S820_H-SER.s2p" Temp=25 
-GRM18:C5  0 N__16 PartNumber=900 
-GRM31:C7  0 N__14 PartNumber=545 
-GRM31:C6  0 N__15 PartNumber=456 
+VIA:V2  N__19 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
+GRM18:C5  N__20 N__16 PartNumber=900 
+GRM31:C7  N__17 N__14 PartNumber=545 
+GRM31:C6  N__19 N__15 PartNumber=456 
 
 L1=17.145
 L2=3.2
@@ -102,7 +106,7 @@ L3=10
 L4=10
 
 W1=2.89
-W2=1.6
+W2=0.8
 W3=0.7
 W4=1.6
 end "VD-DC-Feed"
@@ -112,6 +116,8 @@ end "VD-DC-Feed"
 ; View Name: schematic
 define "VG-DC-Feed" ( "DC-RF"  "DC-VG" ) 
 ;parameters 
+VIA:V1  N__14 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
+CapJT:Kap1  0 N__1 C=82 pF 
 MLIN2:TL10  N__16 "DC-VG" Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 
@@ -126,16 +132,16 @@ MLIN2:TL3  "DC-RF" N__0 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.
 MLOC2:TL4  N__3 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MCROSO:Cros1  N__18 N__0 N__1 N__3 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
 MTEE_ADS:Tee1  N__20 N__10 N__13 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W3 mm 
-#include "C:/GitHub/TTT4201-Radiosystemdesign/ADSbibs/JTI_CAPS_S_Series//circuit/models/R14S_cktName.net" 
-R14S_cktName:SNP1 0 N__1 File="251R14S820_H-SER.s2p" Temp=25 
-GRM18:C5  0 N__13 PartNumber=900 
-GRM31:C6  0 N__15 PartNumber=456 
-GRM31:C7  0 N__17 PartNumber=545 
+GRM18:C5  N__4 N__13 PartNumber=900 
+GRM31:C6  N__8 N__15 PartNumber=456 
+GRM31:C7  N__14 N__17 PartNumber=545 
 MLIN2:TL5  N__18 N__10 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL8  N__20 N__21 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MTEE_ADS:Tee4  N__12 N__21 N__15 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
 MTEE_ADS:Tee5  N__16 N__19 N__17 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
 MLIN2:TL9  N__12 N__19 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+VIA:V3  N__4 0 D1=0.4 mm D2=0.4 mm H=1.52 mm T=0.00375 mm 
+VIA:V2  N__8 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
 
 W1=2.89
 W2=0.8

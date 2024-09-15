@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="21" Version="100">
+<ADSWorkspace Revision="23" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -105,18 +105,22 @@
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
         <Preferences Name="ads_simulation_lay.prf" />
         <Preferences Name="ads_sources_lay.prf" />
-        <Cell Name="PowerAmplifier_lib:Harmonic-Balance" />
-        <Cell Name="PowerAmplifier_lib:IMC" />
-        <Cell Name="PowerAmplifier_lib:IV-Curves" />
-        <Cell Name="PowerAmplifier_lib:OMC" />
-        <Cell Name="PowerAmplifier_lib:PA" />
-        <Cell Name="PowerAmplifier_lib:S-Parameter" />
-        <Cell Name="PowerAmplifier_lib:VD-DC-Feed" />
-        <Cell Name="PowerAmplifier_lib:VG-DC-Feed" />
         <Library Name="JTI_CAPS_S_Series" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
         <Library Name="JTI_Inductors_L14C_Series" />
         <LibDM Name="JTI_Inductors_L14C_Series:data.dm" />
         <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%S#2d%Parameter_schematic\annotation_1.xml" />
+        <Preferences Name="Johanson_lib_lay.prf" />
+        <Cell Name="PowerAmplifier_lib:Harmonic-Balance" />
+        <Cell Name="PowerAmplifier_lib:IMC" />
+        <Cell Name="PowerAmplifier_lib:IV-Curves" />
+        <Cell Name="PowerAmplifier_lib:OMC" />
+        <Cell Name="PowerAmplifier_lib:OutlineNew62.5x62.5_Lay" />
+        <Cell Name="PowerAmplifier_lib:PA" />
+        <Cell Name="PowerAmplifier_lib:S-Parameter" />
+        <Cell Name="PowerAmplifier_lib:VD-DC-Feed" />
+        <Cell Name="PowerAmplifier_lib:VG-DC-Feed" />
+        <LibDM Name="JTI_CAPS_S_Series:data.dm" />
+        <LibDM Name="JTI_Inductors_L14C_Series:data.dm" />
     </Workspace>
 </ADSWorkspace>

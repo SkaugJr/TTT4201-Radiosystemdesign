@@ -3,23 +3,20 @@ hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
     (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
 
 
-***** Simulation started at Fri Sep 13 19:44:10 2024
+***** Simulation started at Sun Sep 15 15:30:45 2024
       Running on host: "KollisPC"
       In Directory: "C:\GitHub\TTT4201-Radiosystemdesign\ReellPowerAmplifier_wrk\data"
-      Process ID: 27284
+      Process ID: 14664
+
+Warning detected by hpeesofsim during netlist flattening.
+    Capacitor `X2.Kap1.C9' is shorted.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Capacitor `X3.Kap1.C9' is shorted.
 
 Pt DC convergence is used.
 
 SP SP1[1] <PowerAmplifier_lib:S-Parameter:schematic>   freq=(100 MHz->6 GHz)
-Warning detected by hpeesofsim during SP analysis `SP1'.
-    Data in the Touchstone file `C:/github/ttt4201-radiosystemdesign/adsbibs/jti_caps_s_series/circuit/data/251R14S820_H-SER.s2p'
-    does not cover the requested value of `freq'.
-    Therefore, the required data was obtained by extrapolation.
-
-Warning detected by hpeesofsim during SP analysis `SP1'.
-    The DC (0 Hz) value has not been specified in the Touchstone file
-    'C:/github/ttt4201-radiosystemdesign/adsbibs/jti_caps_s_series/circuit/data/251R14S820_H-SER.s2p'.
-
 
 Warning detected by hpeesofsim during circuit set up.
     `X1.X1.X1': Unable to resolve variable(s) or functions(s) in expression ` idi = id.i'
@@ -36,5 +33,5 @@ Warning detected by hpeesofsim during circuit set up.
 
 
 Resource usage:
-  Total stopwatch time     =     1.42 seconds.
+  Total stopwatch time     =     1.29 seconds.
 
