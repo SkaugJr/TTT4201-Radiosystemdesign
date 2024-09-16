@@ -3,10 +3,10 @@ hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
     (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
 
 
-***** Simulation started at Sun Sep 15 15:30:45 2024
-      Running on host: "KollisPC"
-      In Directory: "C:\GitHub\TTT4201-Radiosystemdesign\ReellPowerAmplifier_wrk\data"
-      Process ID: 14664
+***** Simulation started at Mon Sep 16 12:28:13 2024
+      Running on host: "LAPTOP-61MDKHI1"
+      In Directory: "C:\Github\TTT4201-Radiosystemdesign\ReellPowerAmplifier_wrk\data"
+      Process ID: 16656
 
 Warning detected by hpeesofsim during netlist flattening.
     Capacitor `X2.Kap1.C9' is shorted.
@@ -33,5 +33,5 @@ Warning detected by hpeesofsim during circuit set up.
 
 
 Resource usage:
-  Total stopwatch time     =     1.29 seconds.
+  Total stopwatch time     =     3.15 seconds.
 

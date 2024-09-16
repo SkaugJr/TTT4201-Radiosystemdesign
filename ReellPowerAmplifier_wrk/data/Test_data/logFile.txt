@@ -1,0 +1,22 @@
+
+hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
+    (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
+
+
+***** Simulation started at Mon Sep 16 12:23:37 2024
+      Running on host: "LAPTOP-61MDKHI1"
+      In Directory: "C:\Github\TTT4201-Radiosystemdesign\ReellPowerAmplifier_wrk\data"
+      Process ID: 17176
+
+
+SP SP1[1] <PowerAmplifier_lib:Test:schematic>   freq=(100 MHz->6 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    Data in the Touchstone file `C:/github/ttt4201-radiosystemdesign/adsbibs/jti_caps_s_series/circuit/data/501R14S9R1_H-SER.s2p'
+    does not cover the requested value of `freq'.
+    Therefore, the required data was obtained by extrapolation.
+
+
+
+Resource usage:
+  Total stopwatch time     =     2.19 seconds.
+
