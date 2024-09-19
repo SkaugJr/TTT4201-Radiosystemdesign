@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<annotation_files Time="tor. sep. 19 10:42:56 2024" Version="1.0" Simulator="hpeesofsim">
+<annotation_files Time="tor. sep. 19 11:30:01 2024" Simulator="hpeesofsim" Version="1.0">
  <File name="annotation_1.xml">
   <Controller name="HB1_(DC)">
-   <P>P_in: -1.0000000000000000e+01</P>
+   <P>RFpower: 0.0000000000000000e+00</P>
    <P>freq: 0.0000000000000000e+00</P>
   </Controller>
  </File>
  <File name="annotation_2.xml">
   <Controller name="HB1_(HB)">
-   <P>P_in: -1.0000000000000000e+01</P>
+   <P>RFpower: 0.0000000000000000e+00</P>
    <P>freq: 0.0000000000000000e+00</P>
   </Controller>
  </File>

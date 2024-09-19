@@ -1,7 +1,7 @@
-; Top Design: "PowerAmplifier_lib:Harmonic-Balance:schematic"
+; Top Design: "PowerAmplifier_lib:Harmonic-Balance-2Tone:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PowerAmplifier_lib:Harmonic-Balance:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PowerAmplifier_lib:Harmonic-Balance-2Tone:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 ; Library Name: Johanson_lib
 ; Cell Name: CapJT
 ; View Name: schematic
@@ -154,23 +154,22 @@ L1=17.145
 L2=3.2
 end "VG-DC-Feed"
 
-PA:X1  N__2 N__1 N__3 N__0 
-IMC:X2  N__13 N__3 
-OMC:X3  N__5 N__0 
-"VG-DC-Feed":X4  N__1 V_G 
-"VD-DC-Feed":X5  N__2 V_D 
+PA:X1  N__10 N__8 N__11 N__9 
+IMC:X2  N__1 N__11 
+OMC:X3  N__0 N__9 
+"VG-DC-Feed":X4  N__8 V_G 
+"VD-DC-Feed":X5  N__10 V_D 
+V_Source:SRC2  N__4 0 Type="V_DC" Vdc=-2.8 V SaveCurrent=1 
 V_Source:SRC1  N__6 0 Type="V_DC" Vdc=28 V SaveCurrent=1 
-V_Source:SRC2  N__10 0 Type="V_DC" Vdc=-2.8 V SaveCurrent=1 
-Port:Term1  V_out 0 Num=1 Z=Z_out Ohm Noise=yes 
-Port:PORT2  V_in 0 Num=2 Z=50 Ohm P[1]=polar(dbmtow(P_in),0) Freq[1]=2.4 GHz    Noise=yes Pac=polar(dbmtow(0),0) LimitPhaseNoiseToCarrier=no 
 
-P_in=-10
-Z_out=50
-HB:HB1 MaxOrder=4 Freq[1]=2.4 GHz Order[1]=6 StatusLevel=2 PackFFT=no Restart=no OutputBudgetIV=no HBSS_WSP=0 SweepVar="P_in" SweepPlan="HB1_stim" OutputPlan="HB1_Output" ConvMode=1 ArcLevelMaxStep=0.0 MaxStepRatio=100 MaxShrinkage=1.0e-5 ArcMaxStep=0.0 \
+RFPower=-10
+f_space=5e6
+f_c=2.4e9
+HB:HB1 MaxOrder=7 Freq[1]=f_c-f_space/2 Freq[2]=f_c+f_space/2 Order[1]=7 Order[2]=7 StatusLevel=2 PackFFT=no Restart=no OutputBudgetIV=no HBSS_WSP=0 SweepVar="RFPower" SweepPlan="HB1_stim" OutputPlan="HB1_Output" ConvMode=1 ArcLevelMaxStep=0.0 MaxStepRatio=100 MaxShrinkage=1.0e-5 ArcMaxStep=0.0 \
 UseKrylov=1 KrylovPrec=1 \
 
 
-SweepPlan: HB1_stim Start=-10 Stop=27 Step=1 
+SweepPlan: HB1_stim Start=-10 Stop=50 Step=1 
 
 OutputPlan:HB1_Output \
       Type="Output" \
@@ -191,14 +190,15 @@ OutputPlan:HB1_Output \
       DeviceVoltageDeviceType="All"
 
 Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
-Freq[1]=2.4 GHz Order[1]=6 
+Freq[1]=f_c-f_space/2 Order[1]=7 
 
 Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
  Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
 
+Short:I_in  V_in N__1 Mode=0 SaveCurrent=yes 
+Short:I_out  N__0 V_out Mode=0 SaveCurrent=yes 
+Short:I_G  N__4 V_G Mode=0 SaveCurrent=yes 
 Short:I_D  N__6 V_D Mode=0 SaveCurrent=yes 
-Short:I_G  N__10 V_G Mode=0 SaveCurrent=yes 
-Short:I_out  N__5 V_out Mode=0 SaveCurrent=yes 
-Short:I_in  V_in N__13 Mode=0 SaveCurrent=yes 
-aele P_out_W=0.5*real(V_out[1]*conj(I_out.i[1]));P_out_dBm=10*log(P_out_W)+30;P_DC_W=real(V_D[0]*I_D.i[0]+V_G[0]*I_G.i[0]);P_DC_dBm=10*log(P_DC_W)+30;P_in_W=0.5*real(V_in[1]*conj(I_in.i[1]));Drain_Eff = P_out_W / P_DC_W * 100;Tot_Eff = P_out_W / (P_DC_W+P_in_W)*100;PAE =( P_out_W-P_in_W) / (P_DC_W)*100;Trans_Gain = P_out_dBm - P_in;
-aele THD = sqrt(sum(mag(V_out[::,2:5])))/mag(V_out[::,1]);
+Port:Term1  V_out 0 Num=1 Z=50 Ohm Noise=yes 
+Port:PORT1  V_in 0 Num=3  Z=50 Ohm  Freq[1]=f_c -f_space/2 Freq[2]=f_c+f_space/2    P[1]=polar(dbmtow(RFPower-3),0) P[2]=polar(dbmtow(RFPower-3),0) Noise=yes Pac=polar(dbmtow(0),0) 
+aele Spektrum_W=0.5*real(V_out*conj(I_out.i));Spektrum = 10*log(Spektrum_W)+30;P_out_f1_W = mix(Spektrum_W,{1,0},Mix);P_out_f2_W = mix(Spektrum_W,{0,1},Mix);P_out_dBm=10*log(P_out_f1_W+P_out_f2_W)+30;TransGain=P_out_dBm-RFPower;P_DC=real(V_D[0]*I_D.i[0]+V_G[0]*I_G.i[0]);Pfund_low=mix(Spektrum,{1,0},Mix);Pfund_high=mix(Spektrum,{0,1},Mix);P3rdOrd_low=mix(Spektrum,{2,-1},Mix);P3rdOrd_high=mix(Spektrum,{-1,2},Mix);ThirdOrdIMD_l=P3rdOrd_low-Pfund_low;ThirdOrdIMD_h=P3rdOrd_high-Pfund_high;P5thOrd_low=mix(Spektrum,{3,-2},Mix);P5thOrd_high=mix(Spektrum,{-2,3},Mix);FifthOrdIMD_l=P5thOrd_low-Pfund_low;FifthOrdIMD_h=P5thOrd_high-Pfund_high;

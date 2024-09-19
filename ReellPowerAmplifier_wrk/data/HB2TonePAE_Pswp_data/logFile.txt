@@ -1,0 +1,194 @@
+
+hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
+    (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
+
+
+***** Simulation started at Thu Sep 19 11:29:59 2024
+      Running on host: "KollisPC"
+      In Directory: "C:\GitHub\TTT4201-Radiosystemdesign\ReellPowerAmplifier_wrk\data"
+      Process ID: 11756
+
+
+HB HB1[1] <PowerAmplifier_lib:HB2TonePAE_Pswp:schematic>
+Pt DC convergence is used.
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 1125.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	8.36358 mA  	100.0             
+1.0 	14.5434 uA  	100.0	21.7942 uV   
+1.1 	63.6216 nA  	100.0	111.918 nV   
+1.2 	281.811 pA  	100.0	493.867 pV   
+1.3 	1.45211 pA  	100.0	2.21938 pV   
+
+HB HB1[1] <PowerAmplifier_lib:HB2TonePAE_Pswp:schematic>   RFpower=(0->15)
+    Number of tones:   2.
+    Number of frequencies:   57.
+    Number of time samples:  256.
+    Number of HB equations (problem size): 8475.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: Krylov (GS_GMRES) iters=150 loose=50.
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+    RFpower=0              0.00% 1/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	4.47906 mA  	100.0             
+1 	11.5516 mA  	100.0	629.967 mV  	  3	5.546e-05   
+2 	42.777 uA   	100.0	22.2892 mV  	  3	1.536e-03   
+3 	60.7641 nA  	100.0	93.1884 uV  	  3	9.780e-04   
+4 	7.40323 pA  	100.0	142.662 nV  	  4	9.777e-05   
+5 	721.861 fA  	100.0	13.5904 pV  	  4	1.748e-04   
+6 	1.04261 pA  	100.0	6.82415 fV  	  4	1.302e-04   
+    RFpower=2.5           16.67% 2/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	2.98665 mA  	100.0             
+1 	4.44254 mA  	100.0	423.562 mV  	  3	4.579e-04   
+2 	21.888 uA   	100.0	10.3003 mV  	  3	3.245e-03   
+3 	85.8873 nA  	100.0	49.4384 uV  	  3	3.627e-03   
+4 	22.2032 pA  	100.0	207.284 nV  	  4	2.554e-04   
+5 	1.02367 pA  	100.0	42.176 pV   	  5	8.427e-05   
+6 	972.662 fA  	100.0	12.4801 fV  	  4	1.676e-04   
+
+    RFpower=5             33.33% 3/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	3.98276 mA  	100.0             
+1 	9.26793 mA  	100.0	567.208 mV  	  3	1.151e-03   
+2 	120.269 uA  	100.0	25.4874 mV  	  3	7.935e-03   
+3 	137.222 nA  	100.0	322.785 uV  	  4	1.286e-03   
+4 	70.4237 pA  	100.0	346.315 nV  	  5	3.957e-04   
+5 	1.1177 pA   	100.0	153.859 pV  	  5	3.344e-04   
+6 	1.26307 pA  	100.0	57.554 fV   	  5	2.761e-04   
+
+    RFpower=7.5           50.00% 4/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	5.31109 mA  	100.0             
+1 	20.5752 mA  	100.0	766.559 mV  	  3	3.274e-03   
+2 	413.873 uA  	100.0	58.0113 mV  	  3	1.372e-02   
+3 	537.926 nA  	100.0	1.24663 mV  	  5	1.155e-03   
+4 	201.221 pA  	100.0	1.27612 uV  	  6	4.601e-04   
+5 	1.72231 pA  	100.0	501.668 pV  	  6	4.775e-04   
+6 	2.01915 pA  	100.0	299.602 fV  	  6	1.672e-04   
+
+    RFpower=10            66.67% 5/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	7.08245 mA  	100.0             
+1 	34.4312 mA  	100.0	1.04618 V   	  3	7.929e-03   
+2 	1.94682 mA  	100.0	89.8433 mV  	  3	1.896e-02   
+3 	11.8917 uA  	100.0	5.02404 mV  	  5	2.266e-03   
+4 	4.66364 nA  	100.0	20.1192 uV  	  7	4.368e-04   
+5 	3.40273 pA  	100.0	10.1729 nV  	  8	1.463e-04   
+6 	1.77542 pA  	100.0	1.09058 pV  	  7	8.239e-04   
+
+    RFpower=11            73.33% 6/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	3.4553 mA   	100.0             
+1 	20.188 mA   	100.0	509.883 mV  	  3	2.340e-02   
+2 	856.811 uA  	100.0	39.1551 mV  	  3	1.450e-02   
+3 	2.93285 uA  	100.0	2.39646 mV  	  6	2.596e-03   
+4 	2.43878 nA  	100.0	7.06672 uV  	  7	9.282e-04   
+5 	3.75352 pA  	100.0	5.92669 nV  	  8	6.050e-04   
+6 	3.28008 pA  	100.0	2.88357 pV  	  7	7.188e-04   
+
+    RFpower=12            80.00% 7/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	3.87691 mA  	100.0             
+1 	28.1673 mA  	100.0	558.012 mV  	  3	3.691e-02   
+2 	2.20852 mA  	100.0	65.9597 mV  	  3	3.500e-02   
+3 	18.859 uA   	100.0	5.23543 mV  	  5	3.910e-03   
+4 	15.4303 nA  	100.0	23.2547 uV  	  7	9.617e-04   
+5 	13.3033 pA  	100.0	20.0784 nV  	  8	9.468e-04   
+6 	4.50797 pA  	100.0	21.6727 pV  	  7	7.634e-04   
+7 	4.54226 pA  	100.0	23.2762 fV  	  7	6.440e-04   
+
+    RFpower=13            86.67% 8/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	4.34996 mA  	100.0             
+1 	39.2965 mA  	100.0	591.17 mV   	  3	5.061e-02   
+2 	2.72613 mA  	100.0	118.593 mV  	  4	2.560e-02   
+3 	9.15607 uA  	100.0	5.00343 mV  	  7	2.706e-03   
+4 	3.58924 nA  	100.0	16.3576 uV  	  9	3.792e-04   
+5 	4.46083 pA  	100.0	6.02738 nV  	  9	4.762e-04   
+6 	4.19495 pA  	100.0	2.72345 pV  	  8	6.409e-04   
+
+    RFpower=14            93.33% 9/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	4.88074 mA  	100.0             
+1 	63.4107 mA  	100.0	607.466 mV  	  3	5.969e-02   
+2 	3.51813 mA  	100.0	171.389 mV  	  5	2.427e-02   
+3 	10.2362 uA  	100.0	6.94649 mV  	  8	3.623e-03   
+4 	6.66214 nA  	100.0	20.8176 uV  	 10	4.483e-04   
+5 	6.07908 pA  	100.0	10.4219 nV  	 11	2.871e-04   
+6 	3.71716 pA  	100.0	3.08307 pV  	 10	7.590e-04   
+
+    RFpower=15           100.00% 10/10
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	5.47628 mA  	100.0             
+1 	94.2768 mA  	100.0	624.431 mV  	  3	7.431e-02   
+2 	7.50141 mA  	100.0	231.444 mV  	  5	5.543e-02   
+3 	32.8371 uA  	100.0	16.5507 mV  	  9	4.473e-03   
+4 	14.0637 nA  	100.0	80.9991 uV  	 12	3.405e-04   
+5 	13.5981 pA  	100.0	30.9287 nV  	 13	5.469e-04   
+6 	7.6877 pA   	100.0	11.1388 pV  	 11	8.240e-04   
+7 	4.14309 pA  	100.0	22.7385 fV  	 11	7.216e-04   
+
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X1.HPMOS1.d             3.505e-06       >       2.593e-06
+X1.HPMOS1.Vdsm          3.458e-06       >       2.577e-06
+X1.HPMOS1.Vgsm          1.675e-06       >       1.261e-06
+X1.HPMOS1.g             1.636e-06       >       1.290e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 5 waveforms.
+o Estimated max HB truncation error: 3.505e-06 @ waveform X1.HPMOS1.d .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 2.593e-06 for this waveform.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     1.72 seconds.
+
