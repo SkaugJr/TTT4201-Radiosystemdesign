@@ -18,15 +18,21 @@ end CapJT
 ; View Name: schematic
 define IMC ( "RF-in"  "RF-out" ) 
 ;parameters 
-MLIN2:TL6  N__1 N__6 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL6  N__8 N__6 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
 VIA:V1  N__6 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
+MCURVE:Curve1  N__4 N__3 Subst="MSub1" W=W mm Angle=90 Radius=r mm 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 MLIN2:TL3  N__3 "RF-out" Subst="MSub1" W=W mm L=L1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MTEE_ADS:Tee1  "RF-in" N__3 N__1 Subst="MSub1" W1=W mm W2=W mm W3=W mm 
+MTEE_ADS:Tee1  N__9 N__8 N__1 Subst="MSub1" W1=W mm W2=W mm W3=W mm 
 
-W=2.89
-L1=22.8481 opt{ 14 to 30 }
-L2=3.21807 opt{ 3 to 12 }
+W=2.89 noopt{ 0.8 to 3.5 }
+L1=9.00002 opt{ 9 to 11 }
+L2=2.05967 opt{ 2 to 16 }
+L3=9.79086 opt{ 3 to 16 }
+L4=3
+r=4 opt{ 2 to 4 }
+MLIN2:TL7  N__1 N__4 Subst="MSub1" W=W mm L=L3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL8  N__9 "RF-in" Subst="MSub1" W=W mm L=L4 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
 end IMC
 
 ; Library Name: PowerAmplifier_lib
@@ -34,15 +40,20 @@ end IMC
 ; View Name: schematic
 define OMC ( Load  PA ) 
 ;parameters 
+MCURVE:Curve1  N__10 N__4 Subst="MSub1" W=W mm Angle=90 Radius=r mm 
 VIA:V1  N__5 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 
 W=2.89
-L1=28.5192 opt{ 20 to 30 }
-L2=6.00299 opt{ 4 to 12 }
-MLIN2:TL4  N__7 N__5 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MLIN2:TL3  PA N__9 Subst="MSub1" W=W mm L=L1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MTEE_ADS:Tee1  N__9 Load N__7 Subst="MSub1" W1=W mm W2=W mm W3=W mm 
+L1=9.97524
+L2=4.6134
+L3=14.9838
+r=3.54029
+MLIN2:TL4  N__8 N__5 Subst="MSub1" W=W mm L=L2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL3  PA N__4 Subst="MSub1" W=W mm L=L1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee1  N__11 N__8 N__7 Subst="MSub1" W1=W mm W2=W mm W3=W mm 
+MLIN2:TL5  N__10 N__7 Subst="MSub1" W=W mm L=L3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL6  N__11 Load Subst="MSub1" W=W mm L=2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
 end OMC
 
 ; Library Name: PowerAmplifier_lib
@@ -52,20 +63,25 @@ define PA ( "DC-VD"  "DC-VG"  "RF-in"  "RF-out" )
 ;parameters 
 #uselib "MA_RFP_ADS_v1p5" , "CG2H40010F_v2"
 "CG2H40010F_v2":X1  N__2 N__16 0 Rth=7.83 Tbase=25 VDN=28 x1=1 x2=1 
-R:R1  N__5 N__6 R=10 Ohm tune{ 10 Ohm to 150 Ohm by 10 Ohm } Noise=yes 
-CapJT:Kap1  N__10 N__7 C=4.7 pF tune{ 2.8 pF to 20 pF by 0.56 pF } 
+R:R1  N__5 N__6 R=10 Ohm tune{ 1 Ohm to 20 Ohm by 1 Ohm } Noise=yes 
+CapJT:Kap1  N__8 N__19 C=2.7 pF tune{ 1 pF to 20 pF by 0.1 pF } 
 GRM18:C5  N__0 "RF-out" PartNumber=900 
 GRM18:C4  "RF-in" N__18 PartNumber=900 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 MTEE_ADS:Tee1  N__18 N__21 "DC-VG" Subst="MSub1" W1=W3 mm W2=W3 mm W3=W1 mm 
 
-W1=2.89
-W2=1.6
+W1=2.6 tune{ 0.8 to 2.89 by 0.1 }
+W2=1.822
 W3=0.8
-MLIN2:TL4  N__2 N__1 Subst="MSub1" W=W3 mm L=3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MTEE_ADS:Tee2  N__16 "DC-VD" N__0 Subst="MSub1" W1=W1 mm W2=W1 mm W3=W3 mm 
-MTEE_ADS:Tee3  N__10 N__5 N__21 Subst="MSub1" W1=W3 mm W2=W3 mm W3=2*W3 mm 
-MTEE_ADS:Tee4  N__6 N__7 N__1 Subst="MSub1" W1=W3 mm W2=W3 mm W3=2*W3 mm 
+r=0.8 tune{ 0.4 to 1.2 by 0.1 }
+MLIN2:TL4  N__2 N__1 Subst="MSub1" W=W3 mm L=2*W3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee2  N__16 "DC-VD" N__0 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W3 mm 
+MCURVE:Curve4  N__6 N__11 Subst="MSub1" W=W3 mm Angle=90 Radius=r mm 
+MTEE_ADS:Tee3  N__20 N__17 N__21 Subst="MSub1" W1=W3 mm W2=W3 mm W3=2*W3 mm 
+MTEE_ADS:Tee4  N__11 N__9 N__1 Subst="MSub1" W1=W3 mm W2=W3 mm W3=2*W3 mm 
+MCURVE:Curve3  N__17 N__5 Subst="MSub1" W=W3 mm Angle=90 Radius=r mm 
+MCURVE:Curve2  N__9 N__19 Subst="MSub1" W=W3 mm Angle=90 Radius=r mm 
+MCURVE:Curve1  N__8 N__20 Subst="MSub1" W=W3 mm Angle=90 Radius=r mm 
 end PA
 
 ; Library Name: PowerAmplifier_lib
@@ -86,13 +102,15 @@ model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.0
 #endif
 
 
+MLIN2:TL11  N__32 N__33 Subst="MSub1" W=W1 mm L=L3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MCURVE:Curve1  N__33 N__36 Subst="MSub1" W=W1 mm Angle=90 Radius=r mm 
 VIA:V4  N__18 0 D1=0.4 mm D2=0.4 mm H=1.52 mm T=0.00375 mm 
 MLIN2:TL9  N__1 N__26 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL8  N__8 N__7 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL5  N__30 N__11 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL3  "DC-RF" N__31 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLOC2:TL4  N__13 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MCROSO:Cros1  N__30 N__31 N__4 N__13 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
+MLOC2:TL4  N__36 Subst="MSub1" W=W1 mm L=L4 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MCROSO:Cros1  N__30 N__31 N__4 N__32 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
 MTEE_ADS:Tee5  N__24 N__26 N__34 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
 MTEE_ADS:Tee4  N__1 N__7 N__35 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W4 mm 
 MTEE_ADS:Tee1  N__8 N__11 N__16 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W3 mm 
@@ -103,10 +121,11 @@ GRM31:C6  N__37 N__35 PartNumber=456
 
 L1=17.145
 L2=3.2
-L3=10
-L4=10
+L3=3
+L4=L1-L3-3.14/2*r
+r=3
 
-W1=2.89
+W1=1.822
 W2=0.8
 W3=0.7
 W4=1.6
@@ -117,6 +136,9 @@ end "VD-DC-Feed"
 ; View Name: schematic
 define "VG-DC-Feed" ( "DC-RF"  "DC-VG" ) 
 ;parameters 
+MLOC2:TL12  N__37 Subst="MSub1" W=W1 mm L=L4 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL11  N__35 N__36 Subst="MSub1" W=W1 mm L=L3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MCURVE:Curve1  N__36 N__37 Subst="MSub1" W=W1 mm Angle=90 Radius=r mm 
 VIA:V4  0 N__11 D1=0.4 mm D2=0.4 mm H=1.52 mm T=0.00375 mm 
 VIA:V1  N__9 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
 CapJT:Kap1  N__11 N__1 C=82 pF 
@@ -131,8 +153,13 @@ model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.0
 
 
 MLIN2:TL3  "DC-RF" N__25 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLOC2:TL4  N__3 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MCROSO:Cros1  N__28 N__25 N__1 N__3 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
+
+L1=17.145
+L2=3.2
+L3=3
+L4=L1-L3-3.14/2*r
+r=3
+MCROSO:Cros1  N__28 N__25 N__1 N__35 Subst="MSub1" W1=W2 mm W2=W1 mm W3=W2 mm W4=W1 mm 
 MTEE_ADS:Tee1  N__29 N__10 N__30 Subst="MSub1" W1=W2 mm W2=W2 mm W3=W3 mm 
 GRM18:C5  N__4 N__30 PartNumber=900 
 GRM31:C6  N__8 N__15 PartNumber=456 
@@ -145,13 +172,10 @@ MLIN2:TL9  N__12 N__38 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0
 VIA:V3  N__4 0 D1=0.4 mm D2=0.4 mm H=1.52 mm T=0.00375 mm 
 VIA:V2  N__8 0 D1=0.8 mm D2=0.8 mm H=1.52 mm T=0.00375 mm 
 
-W1=2.89
+W1=2.2 tune{ 0.8 to 2.89 by 0.1 }
 W2=0.8
 W3=0.7
 W4=1.6
-
-L1=17.145
-L2=3.2
 end "VG-DC-Feed"
 
 PA:X1  N__10 N__8 N__11 N__9 
@@ -199,6 +223,6 @@ Short:I_in  V_in N__1 Mode=0 SaveCurrent=yes
 Short:I_out  N__0 V_out Mode=0 SaveCurrent=yes 
 Short:I_G  N__4 V_G Mode=0 SaveCurrent=yes 
 Short:I_D  N__6 V_D Mode=0 SaveCurrent=yes 
+aele Spektrum_W=0.5*real(V_out*conj(I_out.i));Spektrum = 10*log(Spektrum_W)+30;P_out_f1_W = mix(Spektrum_W,{1,0},Mix);P_out_f2_W = mix(Spektrum_W,{0,1},Mix);P_out_dBm=10*log(P_out_f1_W+P_out_f2_W)+30;TransGain=P_out_dBm-RFPower;P_DC=real(V_D[0]*I_D.i[0]+V_G[0]*I_G.i[0]);Pfund_low=mix(Spektrum,{1,0},Mix);Pfund_high=mix(Spektrum,{0,1},Mix);P3rdOrd_low=mix(Spektrum,{2,-1},Mix);P3rdOrd_high=mix(Spektrum,{-1,2},Mix);ThirdOrdIMD_l=P3rdOrd_low-Pfund_low;ThirdOrdIMD_h=P3rdOrd_high-Pfund_high;P5thOrd_low=mix(Spektrum,{3,-2},Mix);P5thOrd_high=mix(Spektrum,{-2,3},Mix);FifthOrdIMD_l=P5thOrd_low-Pfund_low;FifthOrdIMD_h=P5thOrd_high-Pfund_high;
 Port:Term1  V_out 0 Num=1 Z=50 Ohm Noise=yes 
 Port:PORT1  V_in 0 Num=3  Z=50 Ohm  Freq[1]=f_c -f_space/2 Freq[2]=f_c+f_space/2    P[1]=polar(dbmtow(RFPower-3),0) P[2]=polar(dbmtow(RFPower-3),0) Noise=yes Pac=polar(dbmtow(0),0) 
-aele Spektrum_W=0.5*real(V_out*conj(I_out.i));Spektrum = 10*log(Spektrum_W)+30;P_out_f1_W = mix(Spektrum_W,{1,0},Mix);P_out_f2_W = mix(Spektrum_W,{0,1},Mix);P_out_dBm=10*log(P_out_f1_W+P_out_f2_W)+30;TransGain=P_out_dBm-RFPower;P_DC=real(V_D[0]*I_D.i[0]+V_G[0]*I_G.i[0]);Pfund_low=mix(Spektrum,{1,0},Mix);Pfund_high=mix(Spektrum,{0,1},Mix);P3rdOrd_low=mix(Spektrum,{2,-1},Mix);P3rdOrd_high=mix(Spektrum,{-1,2},Mix);ThirdOrdIMD_l=P3rdOrd_low-Pfund_low;ThirdOrdIMD_h=P3rdOrd_high-Pfund_high;P5thOrd_low=mix(Spektrum,{3,-2},Mix);P5thOrd_high=mix(Spektrum,{-2,3},Mix);FifthOrdIMD_l=P5thOrd_low-Pfund_low;FifthOrdIMD_h=P5thOrd_high-Pfund_high;
