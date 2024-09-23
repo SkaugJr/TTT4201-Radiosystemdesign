@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-09-23T11:11:19Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-09-16T10:26:40Z");
 	set(ddoId, "FileCreatedDateAndTime", "2024-09-16T10:20:30Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
@@ -37,7 +37,7 @@ goId0 = get_new(pageId, "Plot");
 // Graphical Object:
 	set(goId0, "Right", 6475);
 	set(goId0, "Bottom", 3754);
-	set(goId0, "Left", 1982);
+	set(goId0, "Left", 2008);
 	set(goId0, "Top", 750);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
@@ -51,7 +51,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 643);
+	set(goId0, "LeftMargin", 617);
 	set(goId0, "RightMargin", 100);
 	set(goId0, "TopMargin", 125);
 	set(goId0, "BottomMargin", 504);
@@ -76,7 +76,7 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
 		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 10000000000);
+		 set(axisID, "MaxValue", 6000000000);
 		 set(axisID, "StepSize", 1000000000);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
@@ -98,9 +98,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 40);
-		 set(axisID, "StepSize", 5);
+		 set(axisID, "MinValue", -7);
+		 set(axisID, "MaxValue", 0);
+		 set(axisID, "StepSize", 1);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -192,12 +192,12 @@ traceID = get_new(goId0, "Trace", "plot_vs(dB(S(2,1)), freq)", "X Axis", "Y Axis
 		}
 		set(traceID, "TraceLabelOffset", 100);
 	}
-traceID = get_new(goId0, "Trace", "plot_vs(MaxGain1, freq)", "X Axis", "Y Axis");
+traceID = get_new(goId0, "Trace", "plot_vs(dB(S(4,3)), freq)", "X Axis", "Y Axis");
 // Trace:
 	if (traceID != NULL) {
 		set(traceID, "TraceType", ddsAutomaticTraceType);
 		set(traceID, "Color", 5);
-		set(traceID, "Uid", 1793880766);
+		set(traceID, "Uid", 754555125);
 		set(traceID, "UIIndex", 0);
 		set(traceID, "Status", 536913920);
 	}
@@ -232,73 +232,6 @@ traceID = get_new(goId0, "Trace", "plot_vs(MaxGain1, freq)", "X Axis", "Y Axis")
 		}
 		set(traceID, "TraceLabelOffset", 100);
 	}
-markerID = get_new(traceID, "MarkerNew", "m1", "2400000000.00000000000000000000000000000000", 0, "", "", 1, "");
-// Base Class Object:
-	set(markerID, "Name", "");
-	set(markerID, "Uid", 1945438441);
-// Graphical Object:
-	set(markerID, "Right", 0);
-	set(markerID, "Bottom", 0);
-	set(markerID, "Left", 0);
-	set(markerID, "Top", 0);
-	set(markerID, "Zrot", 0);
-	set(markerID, "Yrot", 0);
-	set(markerID, "Xrot", 0);
-	set(markerID, "Status", 553682944);
-	set(markerID, "LineColor", 0);
-	set(markerID, "LineType", 0);
-	set(markerID, "LineWidth", 0);
-// Marker:
-	if (markerID != NULL) {
-		set(markerID, "DataScript", "trcdata");
-		set(markerID, "DeltaModeStatus", 0);
-		set(markerID, "MkrType", 1);
-		set(markerID, "Format", 0);
-		set(markerID, "NumDigits", 3);
-		set(markerID, "ComplexNumberFormat", 1);
-		set(markerID, "AuxFormat", 0);
-		set(markerID, "AuxNumDigits", 3);
-		set(markerID, "AuxType", 0);
-		set(markerID, "AuxZ", "1");
-		set(markerID, "AuxComplexNumberFormat", 0);
-		set(markerID, "ReadoutChartVisualLabel", 1);
-		set(markerID, "ReadoutSweepVisualLabel", 1);
-		set(markerID, "ReadoutTypeVisualLabel", 1);
-		set(markerID, "ReadoutOutlineVisualLabel", 1);
-		set(markerID, "ReadoutIndeVisualLabel", 1);
-		set(markerID, "ReadoutDepeVisualLabel", 1);
-		set(markerID, "ReadoutNameVisualLabel", 1);
-		set(markerID, "ReadoutVisualLabel", 1);
-		set(markerID, "SymbolVisualLabel", 1);
-		set(markerID, "NameVisualLabel", 1);
-		set(markerID, "MkrDontMoveReadoutWithPlot", 1);
-		set(markerID, "MkrSweepExpressionsEnabled", 0);
-	}
-// More marker:
-	if (markerID != NULL) {
-		set(markerID, "MkrLabelFont", "Arial For CAE");
-		set(markerID, "MkrLabelFontSize", 167);
-		set(markerID, "MkrLabelColor", 0);
-		set(markerID, "MkrReadoutFont", "Arial For CAE");
-		set(markerID, "MkrReadoutFontSize", 167);
-		set(markerID, "MkrReadoutColor", 0);
-		set(markerID, "MkrReadoutFillColor", 0);
-		set(markerID, "MkrReadoutFillPattern", -1);
-		set(markerID, "MkrReadoutLeft", 2625);
-		set(markerID, "MkrReadoutRight", 5042);
-		set(markerID, "MkrReadoutBottom", 615);
-		set(markerID, "MkrReadoutTop", 82);
-		set(markerID, "MkrIndicatorColor", 0);
-		set(markerID, "MkrIndicatorSize", 6);
-		set(markerID, "MkrIndicatorType", 0);
-	}
-// Marker Types:
-	if (markerID != NULL) {
-		set(markerID, "MkrOffsetValue", -3);
-		set(markerID, "MkrAperturePercentX", 10);
-		set(markerID, "MkrAperturePercentY", 10);
-		set(markerID, "DrawApertureOnOff", FALSE);
-	}
 	set(goId0, "PlotLogoHideOnOff", FALSE);
 // Initialize plot
 	set(goId0, "InitPlot", 0);
@@ -312,7 +245,7 @@ markerID = get_new(traceID, "MarkerNew", "m1", "2400000000.000000000000000000000
 ddWinId = get_new(ddsId, "Window", 92, 96, 1489, 730);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 1090238271);
-	set(ddWinId, "PageViewRect_1090238271", list(-4, 5262, 11400, 0));
+	set(ddWinId, "PageViewRect_1090238271", list(0, 5259, 11399, 0));
 	set(ddWinId, "Frame", list(92, 96, 1489, 730));
 	set(ddWinId, "Maximized", FALSE);
 	set(ddWinId, "ForegroundColor", 0);

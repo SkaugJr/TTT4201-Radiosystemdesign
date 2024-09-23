@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DCOPData Simulator="hpeesofsim" Version="1.0" Time="søn. sep. 22 17:31:16 2024">
+<DCOPData Time="man. sep. 23 12:34:22 2024" Simulator="hpeesofsim" Version="1.0">
  <Controller name="HB1_(DC)">
   <SweepCondition>
    <P>RFPower: -1.0000000000000000e+01</P>
