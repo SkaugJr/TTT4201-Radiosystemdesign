@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-09-23T10:53:55Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-10-05T14:34:18Z");
 	set(ddoId, "FileCreatedDateAndTime", "2024-09-19T09:28:36Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
@@ -229,7 +229,7 @@ if (goId0 != NULL) {
 	set(goId0, "Right", 6100);
 	set(goId0, "Bottom", 254);
 	set(goId0, "Left", 1750);
-	set(goId0, "Top", -639);
+	set(goId0, "Top", -632);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -244,7 +244,7 @@ if (goId0 != NULL) {
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 100);
-	set(goId0, "TopMargin", 139);
+	set(goId0, "TopMargin", 132);
 	set(goId0, "BottomMargin", 504);
 }
 if (goId0 != NULL) {
@@ -385,7 +385,7 @@ traceID = get_new(goId0, "Trace", "RFPower[::]", "X Axis", "Y Axis");
 		}
 		set(traceID, "TraceLabelOffset", 100);
 	}
-markerID = get_new(traceID, "MarkerNew", "m1", "4.00000000000000000000000000000000", 0, "", "", 1, "");
+markerID = get_new(traceID, "MarkerNew", "m1", "27.00000000000000000000000000000000", 0, "", "", 1, "");
 // Base Class Object:
 	set(markerID, "Name", "");
 	set(markerID, "Uid", 970103779);
@@ -438,8 +438,8 @@ markerID = get_new(traceID, "MarkerNew", "m1", "4.000000000000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 4750);
-		set(markerID, "MkrReadoutRight", 6017);
-		set(markerID, "MkrReadoutBottom", -747);
+		set(markerID, "MkrReadoutRight", 6098);
+		set(markerID, "MkrReadoutBottom", -759);
 		set(markerID, "MkrReadoutTop", -1125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1831,7 +1831,7 @@ traceID = get_new(goId0, "Trace", "plot_vs(SeventhOrdIMD_l, P_out_dBm)", "X Axis
 ddWinId = get_new(ddsId, "Window", 340, 61, 1214, 889);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 1257392787);
-	set(ddWinId, "PageViewRect_1257392787", list(-2381, 9766, 17629, -157));
+	set(ddWinId, "PageViewRect_1257392787", list(-1083, 15122, 18976, 4658));
 	set(ddWinId, "Frame", list(340, 61, 1214, 889));
 	set(ddWinId, "Maximized", TRUE);
 	set(ddWinId, "ForegroundColor", 0);

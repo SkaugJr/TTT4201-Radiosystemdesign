@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-09-23T12:28:01Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-10-05T14:34:23Z");
 	set(ddoId, "FileCreatedDateAndTime", "2024-09-12T12:04:22Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
@@ -203,7 +203,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "Right", 6475);
 	set(goId0, "Bottom", 3129);
 	set(goId0, "Left", 2086);
-	set(goId0, "Top", 43);
+	set(goId0, "Top", 36);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -218,7 +218,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 539);
 	set(goId0, "RightMargin", 100);
-	set(goId0, "TopMargin", 207);
+	set(goId0, "TopMargin", 214);
 	set(goId0, "BottomMargin", 504);
 // Plot Title...
 	set(goId0, "Title", "");
@@ -490,8 +490,8 @@ markerID = get_new(goId0, "LineMarkerNew", "m1", "2.400533e+01", 0, "3688", "", 
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 2625);
-		set(markerID, "MkrReadoutRight", 5632);
-		set(markerID, "MkrReadoutBottom", 133);
+		set(markerID, "MkrReadoutRight", 5652);
+		set(markerID, "MkrReadoutBottom", 153);
 		set(markerID, "MkrReadoutTop", -750);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -722,8 +722,8 @@ markerID = get_new(traceID, "MarkerNew", "m5", "0.000000000000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 2125);
-		set(markerID, "MkrReadoutRight", 3729);
-		set(markerID, "MkrReadoutBottom", 7216);
+		set(markerID, "MkrReadoutRight", 3749);
+		set(markerID, "MkrReadoutBottom", 7236);
 		set(markerID, "MkrReadoutTop", 6500);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -789,8 +789,8 @@ markerID = get_new(traceID, "MarkerNew", "m6", "16.00000000000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 3875);
-		set(markerID, "MkrReadoutRight", 5740);
-		set(markerID, "MkrReadoutBottom", 7508);
+		set(markerID, "MkrReadoutRight", 5760);
+		set(markerID, "MkrReadoutBottom", 7528);
 		set(markerID, "MkrReadoutTop", 6625);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1022,8 +1022,8 @@ markerID = get_new(traceID, "MarkerNew", "m3", "27.00000000000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 9250);
-		set(markerID, "MkrReadoutRight", 10614);
-		set(markerID, "MkrReadoutBottom", -159);
+		set(markerID, "MkrReadoutRight", 10602);
+		set(markerID, "MkrReadoutBottom", -171);
 		set(markerID, "MkrReadoutTop", -875);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1130,8 +1130,8 @@ markerID = get_new(traceID, "MarkerNew", "m2", "27.00000000000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 7750);
-		set(markerID, "MkrReadoutRight", 8934);
-		set(markerID, "MkrReadoutBottom", -159);
+		set(markerID, "MkrReadoutRight", 8922);
+		set(markerID, "MkrReadoutBottom", -171);
 		set(markerID, "MkrReadoutTop", -875);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1238,8 +1238,8 @@ markerID = get_new(traceID, "MarkerNew", "m4", "27.00000000000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 10875);
-		set(markerID, "MkrReadoutRight", 11878);
-		set(markerID, "MkrReadoutBottom", -159);
+		set(markerID, "MkrReadoutRight", 11866);
+		set(markerID, "MkrReadoutBottom", -171);
 		set(markerID, "MkrReadoutTop", -875);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1450,8 +1450,8 @@ markerID = get_new(traceID, "MarkerNew", "m8", "0.000000000004340277777777777599
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 12500);
-		set(markerID, "MkrReadoutRight", 14111);
-		set(markerID, "MkrReadoutBottom", 1549);
+		set(markerID, "MkrReadoutRight", 14131);
+		set(markerID, "MkrReadoutBottom", 1569);
 		set(markerID, "MkrReadoutTop", 1000);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 8);
@@ -1637,8 +1637,8 @@ markerID = get_new(traceID, "MarkerNew", "m9", "0.000000000412326388888888875974
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 12500);
-		set(markerID, "MkrReadoutRight", 14124);
-		set(markerID, "MkrReadoutBottom", 3049);
+		set(markerID, "MkrReadoutRight", 14144);
+		set(markerID, "MkrReadoutBottom", 3069);
 		set(markerID, "MkrReadoutTop", 2500);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 8);
@@ -1824,8 +1824,8 @@ markerID = get_new(traceID, "MarkerNew", "m10", "0.00000000020833333333333333769
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 12375);
-		set(markerID, "MkrReadoutRight", 14180);
-		set(markerID, "MkrReadoutBottom", 4674);
+		set(markerID, "MkrReadoutRight", 14200);
+		set(markerID, "MkrReadoutBottom", 4694);
 		set(markerID, "MkrReadoutTop", 4125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 8);
@@ -2011,8 +2011,8 @@ markerID = get_new(traceID, "MarkerNew", "m11", "0.00000000020833333333333333769
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 12375);
-		set(markerID, "MkrReadoutRight", 14100);
-		set(markerID, "MkrReadoutBottom", 6174);
+		set(markerID, "MkrReadoutRight", 14120);
+		set(markerID, "MkrReadoutBottom", 6194);
 		set(markerID, "MkrReadoutTop", 5625);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 8);
@@ -2684,7 +2684,7 @@ if (goId0 != NULL) {
 	set(goId0, "Right", 19600);
 	set(goId0, "Bottom", 129);
 	set(goId0, "Left", 15250);
-	set(goId0, "Top", -763);
+	set(goId0, "Top", -770);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -2699,7 +2699,7 @@ if (goId0 != NULL) {
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 100);
-	set(goId0, "TopMargin", 138);
+	set(goId0, "TopMargin", 145);
 	set(goId0, "BottomMargin", 504);
 }
 if (goId0 != NULL) {
@@ -2893,8 +2893,8 @@ markerID = get_new(traceID, "MarkerNew", "m7", "24.00000000000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 17625);
-		set(markerID, "MkrReadoutRight", 18628);
-		set(markerID, "MkrReadoutBottom", -868);
+		set(markerID, "MkrReadoutRight", 18648);
+		set(markerID, "MkrReadoutBottom", -848);
 		set(markerID, "MkrReadoutTop", -1250);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -2946,7 +2946,7 @@ goId0 = get_new(pageId, "Equation");
 ddWinId = get_new(ddsId, "Window", 433, 0, 1231, 717);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 358992539);
-	set(ddWinId, "PageViewRect_358992539", list(2080, 9313, 24253, -1683));
+	set(ddWinId, "PageViewRect_358992539", list(1524, 9906, 23743, -1684));
 	set(ddWinId, "Frame", list(433, 0, 1231, 717));
 	set(ddWinId, "Maximized", TRUE);
 	set(ddWinId, "ForegroundColor", 0);

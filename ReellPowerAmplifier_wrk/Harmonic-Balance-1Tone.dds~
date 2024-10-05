@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-09-23T12:15:23Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-09-23T12:28:01Z");
 	set(ddoId, "FileCreatedDateAndTime", "2024-09-12T12:04:22Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
@@ -2840,7 +2840,7 @@ traceID = get_new(goId0, "Trace", "P_in[::]", "X Axis", "Y Axis");
 		}
 		set(traceID, "TraceLabelOffset", 100);
 	}
-markerID = get_new(traceID, "MarkerNew", "m7", "25.00000000000000000000000000000000", 0, "", "", 1, "");
+markerID = get_new(traceID, "MarkerNew", "m7", "24.00000000000000000000000000000000", 0, "", "", 1, "");
 // Base Class Object:
 	set(markerID, "Name", "");
 	set(markerID, "Uid", 399096109);
@@ -2946,7 +2946,7 @@ goId0 = get_new(pageId, "Equation");
 ddWinId = get_new(ddsId, "Window", 433, 0, 1231, 717);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 358992539);
-	set(ddWinId, "PageViewRect_358992539", list(2086, 9309, 24251, -1683));
+	set(ddWinId, "PageViewRect_358992539", list(2080, 9313, 24253, -1683));
 	set(ddWinId, "Frame", list(433, 0, 1231, 717));
 	set(ddWinId, "Maximized", TRUE);
 	set(ddWinId, "ForegroundColor", 0);

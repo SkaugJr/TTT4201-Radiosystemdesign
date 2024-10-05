@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-09-23T10:42:49Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-09-23T10:53:55Z");
 	set(ddoId, "FileCreatedDateAndTime", "2024-09-19T09:28:36Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
@@ -438,8 +438,8 @@ markerID = get_new(traceID, "MarkerNew", "m1", "4.000000000000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 4750);
-		set(markerID, "MkrReadoutRight", 6021);
-		set(markerID, "MkrReadoutBottom", -743);
+		set(markerID, "MkrReadoutRight", 6017);
+		set(markerID, "MkrReadoutBottom", -747);
 		set(markerID, "MkrReadoutTop", -1125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1685,7 +1685,7 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", FALSE);
 		 set(axisID, "MinValue", -150);
-		 set(axisID, "MaxValue", -0);
+		 set(axisID, "MaxValue", 0);
 		 set(axisID, "StepSize", 20);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
@@ -1831,9 +1831,9 @@ traceID = get_new(goId0, "Trace", "plot_vs(SeventhOrdIMD_l, P_out_dBm)", "X Axis
 ddWinId = get_new(ddsId, "Window", 340, 61, 1214, 889);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 1257392787);
-	set(ddWinId, "PageViewRect_1257392787", list(-1182, 10683, 12528, 772));
+	set(ddWinId, "PageViewRect_1257392787", list(-2381, 9766, 17629, -157));
 	set(ddWinId, "Frame", list(340, 61, 1214, 889));
-	set(ddWinId, "Maximized", FALSE);
+	set(ddWinId, "Maximized", TRUE);
 	set(ddWinId, "ForegroundColor", 0);
 	set(ddWinId, "BackgroundColor", 8);
 	set(ddWinId, "WindowPageOrder", list("page 1"));
