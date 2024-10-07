@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-09-23T11:14:57Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-10-07T11:32:16Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
 	set(ddoId, "DefaultDataset", "S_Parameter");
@@ -752,8 +752,8 @@ markerID = get_new(traceID, "MarkerNew", "m3", "2400000000.000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 4375);
-		set(markerID, "MkrReadoutRight", 5617);
-		set(markerID, "MkrReadoutBottom", 436);
+		set(markerID, "MkrReadoutRight", 5605);
+		set(markerID, "MkrReadoutBottom", 424);
 		set(markerID, "MkrReadoutTop", -125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -859,8 +859,8 @@ markerID = get_new(traceID, "MarkerNew", "m2", "2400000000.000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 2875);
-		set(markerID, "MkrReadoutRight", 4164);
-		set(markerID, "MkrReadoutBottom", 436);
+		set(markerID, "MkrReadoutRight", 4152);
+		set(markerID, "MkrReadoutBottom", 424);
 		set(markerID, "MkrReadoutTop", -125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1091,8 +1091,8 @@ markerID = get_new(traceID, "MarkerNew", "m5", "100000000.0000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 10500);
-		set(markerID, "MkrReadoutRight", 11755);
-		set(markerID, "MkrReadoutBottom", 603);
+		set(markerID, "MkrReadoutRight", 11743);
+		set(markerID, "MkrReadoutBottom", 591);
 		set(markerID, "MkrReadoutTop", -125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1198,8 +1198,8 @@ markerID = get_new(traceID, "MarkerNew", "m4", "550000000.0000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 9000);
-		set(markerID, "MkrReadoutRight", 10423);
-		set(markerID, "MkrReadoutBottom", 603);
+		set(markerID, "MkrReadoutRight", 10411);
+		set(markerID, "MkrReadoutBottom", 591);
 		set(markerID, "MkrReadoutTop", -125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1430,8 +1430,8 @@ markerID = get_new(traceID, "MarkerNew", "m1", "2400000000.000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 15122);
-		set(markerID, "MkrReadoutRight", 15200);
-		set(markerID, "MkrReadoutBottom", 5445);
+		set(markerID, "MkrReadoutRight", 15188);
+		set(markerID, "MkrReadoutBottom", 5433);
 		set(markerID, "MkrReadoutTop", 5382);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -14861,16 +14861,16 @@ goId0 = get_new(pageId, "Text");
 	set(ddoId, "UpdateAllExpressions", TRUE);
 	set(ddoId, "EnableExpressionUpdates", TRUE);
 
-ddWinId = get_new(ddsId, "Window", 24, 389, 1489, 730);
+ddWinId = get_new(ddsId, "Window", 18, 217, 1489, 730);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 669265413);
-	set(ddWinId, "PageViewRect_669265413", list(-468, 8556, 19745, -769));
+	set(ddWinId, "PageViewRect_669265413", list(-241, 6743, 15946, -725));
 	set(ddWinId, "PageViewRect_229195906", list(-11545, 9259, 4907, -881));
 	set(ddWinId, "PageViewRect_1789194935", list(-10579, 9987, 17531, -3046));
 	set(ddWinId, "PageViewRect_741782586", list(-2947, 19402, 29390, -526));
 	set(ddWinId, "PageViewRect_1216784589", list(-5594, 2667, 16657, -7650));
 	set(ddWinId, "PageViewRect_1575049005", list(-8944, 13243, 18192, 662));
-	set(ddWinId, "Frame", list(24, 389, 1489, 730));
+	set(ddWinId, "Frame", list(18, 217, 1489, 730));
 	set(ddWinId, "Maximized", FALSE);
 	set(ddWinId, "ForegroundColor", 0);
 	set(ddWinId, "BackgroundColor", 8);

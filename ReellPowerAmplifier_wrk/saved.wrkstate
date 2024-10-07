@@ -1,8 +1,7 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
     <Windows>
-        <Schematic lib="PowerAmplifier_lib" geom="1,0,0,243,264,2087,1088,2560,1440" cell="Harmonic-Balance-1Tone" height="1088" view="schematic" x1="242" y1="233" width="2087"/>
-        <DDS name="Harmonic-Balance-1Tone.dds"/>
+        <Schematic y1="130" lib="PowerAmplifier_lib" cell="IMC" height="816" x1="183" geom="1,0,1,184,168,1565,816,1920,1080" width="1565" view="schematic"/>
     </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>
