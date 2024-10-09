@@ -103,7 +103,7 @@ model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.0
 #ifndef muRataLibWeb_C
 #define muRataLibWeb_C
 ; models
-#include "C:/Github/TTT4201-Radiosystemdesign/ADSbibs/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
+#include "C:/Users/skaug/TTT4201-Radiosystemdesign/ADSbibs/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
 #endif
 
 
@@ -153,7 +153,7 @@ model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.0
 #ifndef muRataLibWeb_C
 #define muRataLibWeb_C
 ; models
-#include "C:/Github/TTT4201-Radiosystemdesign/ADSbibs/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
+#include "C:/Users/skaug/TTT4201-Radiosystemdesign/ADSbibs/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
 #endif
 
 
