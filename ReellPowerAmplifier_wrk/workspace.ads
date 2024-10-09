@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="42" Version="100">
+<ADSWorkspace Revision="45" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -158,6 +158,13 @@
         <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%Test_schematic\annotation_map.xml" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
         <LibDM Name="JTI_Inductors_L14C_Series:data.dm" />
+        <LibDM Name="JTI_CAPS_S_Series:data.dm" />
+        <Dataset Name="IV_Curves.ds" />
+        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%I%V#2d%Curves_schematic\annotation_1.xml" />
+        <Data_Files Name="dc_annotation\%Power%Amplifier_lib_%I%V#2d%Curves_schematic\annotation_map.xml" />
+        <Data_Files Name="IV_Curves.ds" />
+        <Data_Files Name="IV_Curves_data\logFile.txt" />
+        <Library Name="JTI_Inductors_L14C_Series" />
         <Cell Name="PowerAmplifier_lib:Final_Layout" />
         <Cell Name="PowerAmplifier_lib:Harmonic-Balance-1Tone" />
         <Cell Name="PowerAmplifier_lib:Harmonic-Balance-2Tone" />
@@ -170,5 +177,6 @@
         <Cell Name="PowerAmplifier_lib:VD-DC-Feed" />
         <Cell Name="PowerAmplifier_lib:VG-DC-Feed" />
         <LibDM Name="JTI_CAPS_S_Series:data.dm" />
+        <LibDM Name="JTI_Inductors_L14C_Series:data.dm" />
     </Workspace>
 </ADSWorkspace>

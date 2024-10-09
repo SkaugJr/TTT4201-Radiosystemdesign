@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-10-09T12:03:00Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-10-09T20:45:12Z");
 	set(ddoId, "FileCreatedDateAndTime", "2024-09-12T12:04:22Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
@@ -203,7 +203,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "Right", 6475);
 	set(goId0, "Bottom", 3129);
 	set(goId0, "Left", 2086);
-	set(goId0, "Top", 10);
+	set(goId0, "Top", 36);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -218,7 +218,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 539);
 	set(goId0, "RightMargin", 100);
-	set(goId0, "TopMargin", 240);
+	set(goId0, "TopMargin", 214);
 	set(goId0, "BottomMargin", 504);
 // Plot Title...
 	set(goId0, "Title", "");
@@ -2684,7 +2684,7 @@ if (goId0 != NULL) {
 	set(goId0, "Right", 19600);
 	set(goId0, "Bottom", 129);
 	set(goId0, "Left", 15250);
-	set(goId0, "Top", -796);
+	set(goId0, "Top", -770);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -2699,7 +2699,7 @@ if (goId0 != NULL) {
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 100);
-	set(goId0, "TopMargin", 171);
+	set(goId0, "TopMargin", 145);
 	set(goId0, "BottomMargin", 504);
 }
 if (goId0 != NULL) {
@@ -2985,7 +2985,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 1529501047);
+		 set(axisID, "Uid", 1467986623);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3093,7 +3093,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 1182963318);
+		 set(axisID, "Uid", 2041780309);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3177,7 +3177,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 2071537507);
+		 set(axisID, "Uid", 848681042);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3285,7 +3285,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 1587270600);
+		 set(axisID, "Uid", 649474120);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3369,7 +3369,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 1020439432);
+		 set(axisID, "Uid", 1461255179);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3453,7 +3453,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 1859593926);
+		 set(axisID, "Uid", 83284910);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3534,7 +3534,7 @@ traceID = get_new(goId0, "Trace", "ts(I_out.i)", "", "");
 ddWinId = get_new(ddsId, "Window", 433, 0, 1231, 717);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 358992539);
-	set(ddWinId, "PageViewRect_358992539", list(22110, 9980, 41534, -860));
+	set(ddWinId, "PageViewRect_358992539", list(-16, 7601, 19494, -3288));
 	set(ddWinId, "Frame", list(433, 0, 1231, 717));
 	set(ddWinId, "Maximized", FALSE);
 	set(ddWinId, "ForegroundColor", 0);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DCOPData Simulator="hpeesofsim" Time="ons. okt. 9 16:32:49 2024" Version="1.0">
+<DCOPData Version="1.0" Time="ons. okt. 9 22:28:15 2024" Simulator="hpeesofsim">
  <Controller name="HB1_(DC)">
   <SweepCondition>
    <P>P_in: -1.0000000000000000e+01</P>
