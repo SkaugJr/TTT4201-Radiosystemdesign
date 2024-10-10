@@ -12,12 +12,12 @@ SweepPlan: Sweep2_stim Start=VDS_Start Stop=VDS_Stop Step=VDS_Step
 
 ParamSweep:Sweep1 SimInstanceName[1]="DC1" SimInstanceName[2]="Sweep2" StatusLevel=2 SweepVar="VGS" SweepPlan="Sweep1_stim" 
 
-SweepPlan: Sweep1_stim Start=-1.5 Stop=-3.0 Step=0.1 
+SweepPlan: Sweep1_stim Start=-1.5 Stop=-3 Step=0.1 
 
 
 VDS_Start=0
 VDS_Stop=32
-VDS_Step=1
+VDS_Step=0.1
 AC:AC1 SortNoise=0 IncludePortNoise=yes BandwidthForNoise=1 Hz FreqConversion=no UseFiniteDiff=no StatusLevel=2 OutputBudgetIV=no DevOpPtLevel=0 \
 OutputPlan="AC1_Output" Freq=2.4 GHz 
 
