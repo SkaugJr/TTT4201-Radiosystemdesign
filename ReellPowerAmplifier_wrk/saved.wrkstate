@@ -1,8 +1,5 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
-    <Windows>
-        <Schematic geom="1,0,0,39,460,2087,931,2560,1440" y1="429" lib="PowerAmplifier_lib" cell="IV-Curves" height="931" x1="38" width="2087" view="schematic"/>
-        <DDS name="IV-Curves.dds"/>
-    </Windows>
+    <Windows/>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>
