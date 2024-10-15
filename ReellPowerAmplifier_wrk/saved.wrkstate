@@ -1,7 +1,5 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
-    <Windows>
-        <Layout x1="0" y1="0" cell="Final_Layout" view="layout" geom="1,0,0,1,31,1278,1360,2560,1440" width="1278" lib="PowerAmplifier_lib" height="1360"/>
-    </Windows>
+    <Windows/>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>
