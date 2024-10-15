@@ -1,0 +1,11 @@
+<!DOCTYPE Technology>
+<Lpp_List>
+    <LPP rgb="16711680" alpha="105" protect="0" mode="2" purpose="drawing" line="0" layer="bound" visible="1" fill="18"/>
+    <LPP rgb="49152" alpha="105" protect="0" mode="2" purpose="drawing" line="0" layer="cond2" visible="1" fill="18"/>
+    <LPP rgb="16776960" alpha="105" protect="0" mode="2" purpose="drawing" line="0" layer="cond" visible="1" fill="18"/>
+    <LPP rgb="65535" alpha="105" protect="0" mode="2" purpose="drawing" line="0" layer="hole.drl" visible="1" fill="18"/>
+    <LPP rgb="255" alpha="105" protect="0" mode="2" purpose="drawing" line="0" layer="hole" visible="1" fill="18"/>
+    <LPP rgb="16711935" alpha="105" protect="0" mode="2" purpose="drawing" line="0" layer="silk_screen" visible="1" fill="18"/>
+    <LPP rgb="25600" alpha="105" protect="0" mode="2" purpose="drawing" line="0" layer="solder_mask" visible="1" fill="18"/>
+    <LPP rgb="13458524" alpha="105" protect="0" mode="2" purpose="drawing" line="0" layer="solder_mask_bottom" visible="1" fill="18"/>
+</Lpp_List>

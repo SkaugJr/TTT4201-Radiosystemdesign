@@ -1,0 +1,8 @@
+Tue Oct 15 22:25:21 2024
+Reading Gerber file "C:/GitHub/TTT4201-Radiosystemdesign/Final_Layout – Kopi/gerber/bound.gbr;C:/GitHub/TTT4201-Radiosystemdesign/Final_Layout – Kopi/gerber/cond.gbr;C:/GitHub/TTT4201-Radiosystemdesign/Final_Layout – Kopi/gerber/cond2.gbr;C:/GitHub/TTT4201-Radiosystemdesign/Final_Layout – Kopi/gerber/hole.drl;C:/GitHub/TTT4201-Radiosystemdesign/Final_Layout – Kopi/gerber/hole.gbr;C:/GitHub/TTT4201-Radiosystemdesign/Final_Layout – Kopi/gerber/silk_screen.gbr;C:/GitHub/TTT4201-Radiosystemdesign/Final_Layout – Kopi/gerber/solder_mask.gbr;C:/GitHub/TTT4201-Radiosystemdesign/Final_Layout – Kopi/gerber/solder_mask_bottom.gbr".
+
+Warnings occurred during Gerber file load:
+
+14 : %IPNEG*% Ignoring unsupported image polarity.
+
+Import Complete

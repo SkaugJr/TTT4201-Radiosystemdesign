@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<AdsTranslatorSetupFile Version="1.0">
+    <Import>
+        <ZeroSuppression>Leading</ZeroSuppression>
+        <CoordMode>AbsoluteCMode</CoordMode>
+        <NumIntegerDigits>2</NumIntegerDigits>
+        <NumFractionalDigits>4</NumFractionalDigits>
+        <Unit>inch</Unit>
+        <Layers />
+    </Import>
+    <Export>
+        <FileFormat>RS274X</FileFormat>
+        <ZeroSuppression>Leading</ZeroSuppression>
+        <CoordMode>AbsoluteCMode</CoordMode>
+        <NumIntegerDigits>6</NumIntegerDigits>
+        <NumFractionalDigits>6</NumFractionalDigits>
+        <XOffset>0</XOffset>
+        <YOffset>0</YOffset>
+        <Scale>1</Scale>
+        <OpenLineWidth>0.025</OpenLineWidth>
+        <SingleFile>0</SingleFile>
+        <Unit>inch</Unit>
+        <Flatten>0</Flatten>
+        <PathsAsPolygons>0</PathsAsPolygons>
+        <HoleFormat>Holes As Cutlines</HoleFormat>
+        <Layers>
+            <Layer EecadLayer="bond" AdsLayer="bond:drawing" Transfer="0" />
+            <Layer EecadLayer="bound" AdsLayer="bound:drawing" Transfer="1" />
+            <Layer EecadLayer="cond2" AdsLayer="cond2:drawing" Transfer="1" />
+            <Layer EecadLayer="cond" AdsLayer="cond:drawing" Transfer="1" />
+            <Layer EecadLayer="default" AdsLayer="default:drawing" Transfer="0" />
+            <Layer EecadLayer="diel" AdsLayer="diel:drawing" Transfer="0" />
+            <Layer EecadLayer="hole" AdsLayer="hole:drawing" Transfer="1" />
+            <Layer EecadLayer="ports" AdsLayer="ports:drawing" Transfer="0" />
+            <Layer EecadLayer="silk_screen" AdsLayer="silk_screen:drawing" Transfer="1" />
+            <Layer EecadLayer="solder_mask" AdsLayer="solder_mask:drawing" Transfer="1" />
+            <Layer EecadLayer="solder_mask_bottom" AdsLayer="solder_mask_bottom:drawing" Transfer="1" />
+        </Layers>
+        <SingleFileFilename></SingleFileFilename>
+        <DrillLayers>
+            <Layer LayerName="cond:drawing" LayerNumber="1" DrillExport="0">
+                <DrillDiameterMap DrawDiameter="19200" ToolDiameter="19200" />
+                <DrillDiameterMap DrawDiameter="8000" ToolDiameter="8000" />
+                <DrillDiameterMap DrawDiameter="8400" ToolDiameter="8400" />
+                <DrillDiameterMap DrawDiameter="4000" ToolDiameter="4000" />
+                <DrillDiameterMap DrawDiameter="34680" ToolDiameter="34680" />
+            </Layer>
+            <Layer LayerName="cond2:drawing" LayerNumber="2" DrillExport="0">
+                <DrillDiameterMap DrawDiameter="19200" ToolDiameter="19200" />
+                <DrillDiameterMap DrawDiameter="8000" ToolDiameter="8000" />
+                <DrillDiameterMap DrawDiameter="8400" ToolDiameter="8400" />
+                <DrillDiameterMap DrawDiameter="4000" ToolDiameter="4000" />
+                <DrillDiameterMap DrawDiameter="34680" ToolDiameter="34680" />
+            </Layer>
+            <Layer LayerName="hole:drawing" LayerNumber="5" DrillExport="1">
+                <DrillDiameterMap DrawDiameter="8000" ToolDiameter="8000" />
+                <DrillDiameterMap DrawDiameter="4000" ToolDiameter="4000" />
+                <DrillDiameterMap DrawDiameter="20000" ToolDiameter="20000" />
+                <DrillDiameterMap DrawDiameter="25000" ToolDiameter="25000" />
+                <DrillDiameterMap DrawDiameter="40000" ToolDiameter="40000" />
+            </Layer>
+        </DrillLayers>
+        <AutoMerge>0</AutoMerge>
+        <ImportNegativeLayerAsSlotLayer>0</ImportNegativeLayerAsSlotLayer>
+        <CreateComponentsInFolder>1</CreateComponentsInFolder>
+        <SelectedDesignName></SelectedDesignName>
+        <VectorizeText>1</VectorizeText>
+        <LayerStackup>1</LayerStackup>
+        <Polarity>
+            <Layer EecadLayer="bond:drawing" Polarity="Positive" />
+            <Layer EecadLayer="bound:drawing" Polarity="Positive" />
+            <Layer EecadLayer="cond2:drawing" Polarity="Positive" />
+            <Layer EecadLayer="cond:drawing" Polarity="Positive" />
+            <Layer EecadLayer="default:drawing" Polarity="Positive" />
+            <Layer EecadLayer="diel:drawing" Polarity="Positive" />
+            <Layer EecadLayer="hole:drawing" Polarity="Positive" />
+            <Layer EecadLayer="ports:drawing" Polarity="Positive" />
+            <Layer EecadLayer="silk_screen:drawing" Polarity="Positive" />
+            <Layer EecadLayer="solder_mask:drawing" Polarity="Positive" />
+            <Layer EecadLayer="solder_mask_bottom:drawing" Polarity="Positive" />
+        </Polarity>
+        <Nets />
+        <Components />
+    </Export>
+</AdsTranslatorSetupFile>
