@@ -44,6 +44,7 @@
                 <DrillDiameterMap DrawDiameter="8400" ToolDiameter="8400" />
                 <DrillDiameterMap DrawDiameter="4000" ToolDiameter="4000" />
                 <DrillDiameterMap DrawDiameter="34680" ToolDiameter="34680" />
+                <DrillDiameterMap DrawDiameter="9600" ToolDiameter="9600" />
             </Layer>
             <Layer LayerName="cond2:drawing" LayerNumber="2" DrillExport="0">
                 <DrillDiameterMap DrawDiameter="19200" ToolDiameter="19200" />
@@ -51,6 +52,7 @@
                 <DrillDiameterMap DrawDiameter="8400" ToolDiameter="8400" />
                 <DrillDiameterMap DrawDiameter="4000" ToolDiameter="4000" />
                 <DrillDiameterMap DrawDiameter="34680" ToolDiameter="34680" />
+                <DrillDiameterMap DrawDiameter="9600" ToolDiameter="9600" />
             </Layer>
             <Layer LayerName="hole:drawing" LayerNumber="5" DrillExport="1">
                 <DrillDiameterMap DrawDiameter="8000" ToolDiameter="8000" />
