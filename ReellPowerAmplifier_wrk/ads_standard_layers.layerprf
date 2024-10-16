@@ -1,6 +1,6 @@
 <!DOCTYPE DisplayAttributes>
 <Lpp_Differences_List>
-    <LPP purpose="drawing" layer="cond2" protect="1"/>
-    <LPP visible="1" purpose="drawing" layer="silk_screen2" protect="0"/>
-    <LPP purpose="drawing" layer="solder_mask" protect="1"/>
+    <LPP protect="1" layer="cond2" purpose="drawing"/>
+    <LPP protect="0" layer="silk_screen2" purpose="drawing"/>
+    <LPP protect="1" layer="solder_mask" purpose="drawing"/>
 </Lpp_Differences_List>

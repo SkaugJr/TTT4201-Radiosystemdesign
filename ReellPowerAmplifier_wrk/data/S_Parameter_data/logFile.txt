@@ -3,10 +3,10 @@ hpeesofsim (*) 602.update2.2 Jun  7 2024, MINT version 5
     (64-bit windows built: Fri Jun 07, 2024 18:22:27 +0000)
 
 
-***** Simulation started at Tue Oct 15 19:19:16 2024
+***** Simulation started at Wed Oct 16 09:40:39 2024
       Running on host: "KollisPC"
       In Directory: "C:\GitHub\TTT4201-Radiosystemdesign\ReellPowerAmplifier_wrk\data"
-      Process ID: 6984
+      Process ID: 3856
 
 Warning detected by hpeesofsim in topology check during circuit set up.
     Number of nodes with no DC path to ground (topology corrected): 2
@@ -30,5 +30,5 @@ Warning detected by hpeesofsim during circuit set up.
 
 
 Resource usage:
-  Total stopwatch time     =     1.52 seconds.
+  Total stopwatch time     =     1.57 seconds.
 
