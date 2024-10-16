@@ -1,6 +1,21 @@
 <!DOCTYPE DisplayAttributes>
 <Lpp_Differences_List>
-    <LPP protect="1" layer="cond2" purpose="drawing"/>
-    <LPP protect="0" layer="silk_screen2" purpose="drawing"/>
-    <LPP protect="1" layer="solder_mask" purpose="drawing"/>
+    <LPP layer="IC_pin1_marker" visible="0" purpose="drawing"/>
+    <LPP layer="IC_pin_number" visible="0" purpose="drawing"/>
+    <LPP layer="hpeesof_region" purpose="drawing" protect="0"/>
+    <LPP layer="momentum_box" purpose="drawing" protect="0"/>
+    <LPP layer="momentum_err" visible="0" purpose="drawing"/>
+    <LPP layer="momentum_ref_offset" purpose="drawing" protect="0"/>
+    <LPP layer="pc4" visible="0" purpose="drawing"/>
+    <LPP layer="pc5" visible="0" purpose="drawing"/>
+    <LPP layer="pc6" visible="0" purpose="drawing"/>
+    <LPP layer="pc7" visible="0" purpose="drawing"/>
+    <LPP layer="pc8" visible="0" purpose="drawing"/>
+    <LPP layer="pcvia1" visible="0" purpose="drawing"/>
+    <LPP layer="pcvia2" visible="0" purpose="drawing"/>
+    <LPP layer="pcvia4" visible="0" purpose="drawing"/>
+    <LPP layer="pcvia5" visible="0" purpose="drawing"/>
+    <LPP layer="pcvia6" visible="0" purpose="drawing"/>
+    <LPP layer="pcvia7" visible="0" purpose="drawing"/>
+    <LPP layer="silk_screen2" visible="1" purpose="drawing" protect="0"/>
 </Lpp_Differences_List>
