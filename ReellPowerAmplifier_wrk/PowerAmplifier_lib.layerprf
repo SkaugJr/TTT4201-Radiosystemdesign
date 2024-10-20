@@ -1,4 +1,4 @@
 <!DOCTYPE DisplayAttributes>
 <Lpp_Differences_List>
-    <LPP protect="1" purpose="drawing" layer="solder_mask_bottom"/>
+    <LPP protect="1" purpose="drawing" visible="0" layer="solder_mask_bottom"/>
 </Lpp_Differences_List>

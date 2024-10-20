@@ -5,12 +5,12 @@
     <LPP purpose="drawing" visible="0" layer="bond"/>
     <LPP purpose="drawing" visible="0" layer="bound"/>
     <LPP purpose="drawing" visible="0" layer="case_dimensions"/>
-    <LPP protect="1" purpose="drawing" layer="cond2"/>
-    <LPP protect="1" purpose="drawing" layer="cond"/>
-    <LPP protect="1" purpose="drawing" layer="default"/>
+    <LPP purpose="drawing" visible="0" layer="cond2"/>
+    <LPP protect="1" purpose="drawing" visible="0" layer="default"/>
     <LPP purpose="drawing" visible="0" layer="diel2"/>
-    <LPP protect="1" purpose="drawing" layer="diel"/>
-    <LPP protect="1" purpose="drawing" layer="hole"/>
+    <LPP purpose="drawing" visible="0" layer="diel"/>
+    <LPP purpose="drawing" visible="0" layer="hole"/>
+    <LPP purpose="drawing" visible="0" layer="hpeesof_region"/>
     <LPP purpose="drawing" visible="0" layer="leads"/>
     <LPP protect="0" purpose="drawing" visible="0" layer="momentum_box"/>
     <LPP purpose="drawing" visible="0" layer="momentum_err"/>
@@ -32,9 +32,9 @@
     <LPP purpose="drawing" visible="0" layer="pcvia6"/>
     <LPP purpose="drawing" visible="0" layer="pcvia7"/>
     <LPP purpose="drawing" visible="0" layer="ports"/>
-    <LPP protect="1" purpose="drawing" layer="resi"/>
+    <LPP purpose="drawing" visible="0" layer="resi"/>
     <LPP protect="0" purpose="drawing" layer="silk_screen2"/>
-    <LPP protect="1" purpose="drawing" layer="solder_mask"/>
+    <LPP purpose="drawing" visible="0" layer="silk_screen"/>
     <LPP purpose="drawing" visible="0" layer="symbol"/>
     <LPP purpose="drawing" visible="0" layer="text"/>
 </Lpp_Differences_List>
