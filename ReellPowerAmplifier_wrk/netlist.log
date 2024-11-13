@@ -1,7 +1,7 @@
-; Top Design: "PowerAmplifier_lib:S-Parameter:schematic"
+; Top Design: "PowerAmplifier_lib:Harmonic-Balance-1Tone:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PowerAmplifier_lib:S-Parameter:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PowerAmplifier_lib:Harmonic-Balance-1Tone:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 ; Library Name: Johanson_lib
 ; Cell Name: CapJT
 ; View Name: schematic
@@ -73,10 +73,8 @@ define PA ( "DC-VD"  "DC-VG"  "RF-in"  "RF-out" )
 "CG2H40010F_v2":X1  N__5 N__2 0 Rth=7.83 Tbase=25 VDN=28 x1=1 x2=1 
 R:R1  N__4 N__10 R=10 Ohm notune{ 1 Ohm to 20 Ohm by 1 Ohm } Noise=yes 
 CapJT:Kap1  N__8 N__19 C=3.3 pF tune{ 1 pF to 20 pF by 0.1 pF } 
-GRM18:C5  N__0 "RF-out" PartNumber=900 
-GRM18:C4  "RF-in" N__18 PartNumber=900 
 model MSub1 MSUB H=1.52 mm Er=4.4 Mur=1 Cond=5.96e7 Hu=1e+33 mm T=35 um TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
-MTEE_ADS:Tee1  N__18 N__21 "DC-VG" Subst="MSub1" W1=W3 mm W2=W3 mm W3=W1 mm 
+MTEE_ADS:Tee1  N__7 N__21 "DC-VG" Subst="MSub1" W1=W3 mm W2=W3 mm W3=W1 mm 
 
 W1=2 notune{ 0.8 to 2.89 by 0.1 }
 W2=1.822
@@ -85,7 +83,7 @@ r=0.8 notune{ 0.4 to 1.2 by 0.1 }
 GAP0603=1.6
 TransGap=4.1
 MLIN2:TL4  N__5 N__1 Subst="MSub1" W=W3 mm L=2*W3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MTEE_ADS:Tee2  N__0 N__16 "DC-VD" Subst="MSub1" W1=W3 mm W2=W3 mm W3=W2 mm 
+MTEE_ADS:Tee2  N__23 N__16 "DC-VD" Subst="MSub1" W1=W3 mm W2=W3 mm W3=W2 mm 
 MCURVE:Curve4  N__10 N__11 Subst="MSub1" W=W3 mm Angle=90 Radius=r mm 
 MGAP:Gap1  N__4 N__10 Subst="MSub1" W=W3 mm S=GAP0603 mm 
 MTEE_ADS:Tee3  N__20 N__17 N__21 Subst="MSub1" W1=W3 mm W2=W3 mm W3=2*W3 mm 
@@ -95,6 +93,8 @@ MCURVE:Curve2  N__9 N__19 Subst="MSub1" W=W3 mm Angle=90 Radius=r mm
 MCURVE:Curve1  N__8 N__20 Subst="MSub1" W=W3 mm Angle=90 Radius=r mm 
 MGAP:Gap2  N__5 N__2 Subst="MSub1" W=W3 mm S=TransGap mm 
 MLIN2:TL5  N__16 N__2 Subst="MSub1" W=W3 mm L=2*W3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+CapJT:Kap2  "RF-in" N__7 C=33 pF 
+CapJT:Kap3  N__23 "RF-out" C=33 pF tune{ 1 pF to 82 pF by 1 pF } 
 end PA
 
 ; Library Name: PowerAmplifier_lib
@@ -208,44 +208,60 @@ Pad=2.5 notune{ 1 to 6 by 0.2 }
 MLIN2:TL14  N__3 N__19 Subst="MSub1" W=W3 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 end "VG-DC-Feed"
 
-S_Param:SP1 CalcS=yes CalcY=no CalcZ=no CalcGroupDelay=yes GroupDelayAperture=1e-4 \
-FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
-SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+PA:X1  N__2 N__1 N__3 N__0 
+IMC:X2  N__13 N__3 
+OMC:X3  N__5 N__0 
+"VG-DC-Feed":X4  N__1 V_G 
+"VD-DC-Feed":X5  N__2 V_D 
+V_Source:SRC1  N__6 0 Type="V_DC" Vdc=28 V SaveCurrent=1 
+V_Source:SRC2  N__10 0 Type="V_DC" Vdc=-2.80 V SaveCurrent=1 
+Port:Term1  V_out 0 Num=1 Z=Z_out Ohm Noise=yes 
+Port:PORT2  V_in 0 Num=2 Z=50 Ohm P[1]=polar(dbmtow(P_in),0) Freq[1]=2.4 GHz    Noise=yes Pac=polar(dbmtow(0),0) LimitPhaseNoiseToCarrier=no 
 
-SweepPlan: SP1_stim Start=0.1 GHz Stop=6 GHz Step=0.05 GHz 
+P_in=-10
+Z_out=50
+HB:HB1 MaxOrder=4 Freq[1]=2.4 GHz Order[1]=6 StatusLevel=2 PackFFT=no Restart=no OutputBudgetIV=no HBSS_WSP=0 SweepVar="P_in" SweepPlan="HB1_stim" OutputPlan="HB1_Output" ConvMode=1 ArcLevelMaxStep=0.0 MaxStepRatio=100 MaxShrinkage=1.0e-5 ArcMaxStep=0.0 \
+UseKrylov=1 KrylovPrec=1 \
 
-OutputPlan:SP1_Output \
+
+SweepPlan: HB1_stim Start=-10 Stop=27 Step=1 
+
+OutputPlan:HB1_Output \
       Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
       UseEquationNestLevel=yes \
       EquationNestLevel=2 \
-      EquationName[1]="Z0" \
       UseSavedEquationNestLevel=yes \
-      SavedEquationNestLevel=2
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
 
-#load "python","LinearCollapse"
-Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=2.4 GHz Order[1]=6 
 
-Z0=50
-Port:Term1  N__11 0 Num=1 Z=Z0 Noise=yes 
-Port:Term2  N__10 0 Num=2 Z=Z0 Noise=yes 
-V_Source:SRC1  N__9 0 Type="V_DC" Vdc=-2.8 V SaveCurrent=1 
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
 
-Options:Options1 Temp=16.85 Tnom=25 TopologyCheck=yes ForceS_Params=yes V_RelTol=1e-6  \
-I_RelTol=1e-6 GiveAllWarnings=yes MaxWarnings=10 ForceM_Params=yes DC_ReadInitialGuess=no  \
-DC_WriteFinalSolution=no TopologyCheckMessages=no GPU=no doDeltaAC=no ReduceSPort=no  \
-ReduceSPortRatio=0.5 WarnSOA=yes MaxWarnSOA=5 Census=no MinNodalR=1e-2 Ohm  \
-LargeCapThreshold=1e-3 F EnableAssertChecks=no EnableSpareRemoval=yes 
+Short:I_D  N__6 V_D Mode=0 SaveCurrent=yes 
+Short:I_G  N__10 V_G Mode=0 SaveCurrent=yes 
+aele THD = sqrt(mag(V_out[2], 2) + mag(V_out[3], 2) + mag(V_out[4], 2)+ mag(V_out[5], 2)+ mag(V_out[6], 2)) / mag(V_out[1], 1);THD_dB = 20 * log(THD);
+Short:I_out  N__5 V_out Mode=0 SaveCurrent=yes 
+Short:I_in  V_in N__13 Mode=0 SaveCurrent=yes 
+aele P_out_W=0.5*real(V_out[1]*conj(I_out.i[1]));P_out2_W=0.5*real(V_out[2]*conj(I_out.i[2]));P_out3_W=0.5*real(V_out[3]*conj(I_out.i[3]));P_out_dBm=10*log(P_out_W)+30;P_out2_dBm=10*log(P_out2_W)+30;P_out3_dBm=10*log(P_out3_W)+30;P_DC_W=real(V_D[0]*I_D.i[0]+V_G[0]*I_G.i[0]);P_DC_dBm=10*log(P_DC_W)+30;P_in_W=0.5*real(V_in[1]*conj(I_in.i[1]));Drain_Eff = P_out_W / P_DC_W * 100;Tot_Eff = P_out_W / (P_DC_W+P_in_W)*100;PAE =( P_out_W-P_in_W) / (P_DC_W)*100;Trans_Gain = P_out_dBm - P_in;
 
-aele mu_load=mu(S);mu_source=mu_prime(S);match_input=sm_gamma1(S);Source_stabcir=s_stab_circle(S,51);Load_stabcir=l_stab_circle(S,51);
-PA:X1  N__6 N__13 N__14 N__4 
-V_Source:SRC2  N__7 0 Type="V_DC" Vdc=28 V SaveCurrent=1 
-"VD-DC-Feed":X2  N__6 N__7 
-"VG-DC-Feed":X3  N__13 N__9 
-IMC:X4  N__11 N__14 
-OMC:X5  N__10 N__4 
+Optim:"Optim1" OptimType="hpVMO" ErrorForm="L2" SAProgressReport=0 MaxIters=250 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="HB1" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTempControlMode=0 SANumTrialsPerIter=10 NumShootsPerIter=20 SATempControlAlpha=0.8 EnableCockpit=yes NormalizeError=yes SaveAllTrials=no UseAdvTermCriteria=no CostRelativeTol=1.0e-8 LimitOfContSmallImprovement=5 
 
-Optim:"Optim1" OptimType="hpVMO" ErrorForm="L2" SAProgressReport=0 MaxIters=50 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="SP1" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTempControlMode=0 SANumTrialsPerIter=10 NumShootsPerIter=20 SATempControlAlpha=0.8 EnableCockpit=yes NormalizeError=yes SaveAllTrials=no UseAdvTermCriteria=no CostRelativeTol=1.0e-8 LimitOfContSmallImprovement=5 
-
-OptimGoal:OptimGoal1 Expr="mag(S(2,1))" SimInstanceName="SP1" Weight=1.0 \
+OptimGoal:OptimGoal1 Expr="P_out_dBm" SimInstanceName="HB1" Weight=1e6 \
 SpecLimitLine[1]="OptimGoal1_limit1" 
-SpecLimitLine:"OptimGoal1_limit1" Type="GreaterThan" Min=18 Weight=1.0 
+SpecLimitLine:"OptimGoal1_limit1" Type="GreaterThan" Min=41 Weight=1e6 
+OptimGoal:OptimGoal2 Expr="PAE" SimInstanceName="HB1" Weight=1.0 \
+SpecLimitLine[1]="OptimGoal2_limit1" 
+SpecLimitLine:"OptimGoal2_limit1" Type="GreaterThan" Min=78.5 Weight=1.0 
