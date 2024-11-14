@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-11-13T11:41:49Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-11-14T09:54:32Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
 	set(ddoId, "DefaultDataset", "S_Parameter");
@@ -545,7 +545,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "Right", 7017);
 	set(goId0, "Bottom", 3907);
 	set(goId0, "Left", 1662);
-	set(goId0, "Top", 478);
+	set(goId0, "Top", 487);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -560,7 +560,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 1088);
 	set(goId0, "RightMargin", 124);
-	set(goId0, "TopMargin", 272);
+	set(goId0, "TopMargin", 263);
 	set(goId0, "BottomMargin", 845);
 // Plot Title...
 	set(goId0, "Title", "");
@@ -792,8 +792,8 @@ markerID = get_new(goId0, "LineMarkerNew", "m6", "2.399710e+09", 0, "2157", "", 
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 3250);
-		set(markerID, "MkrReadoutRight", 4551);
-		set(markerID, "MkrReadoutBottom", -135);
+		set(markerID, "MkrReadoutRight", 4527);
+		set(markerID, "MkrReadoutBottom", -159);
 		set(markerID, "MkrReadoutTop", -875);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1024,8 +1024,8 @@ markerID = get_new(traceID, "MarkerNew", "m5", "100000000.0000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 10500);
-		set(markerID, "MkrReadoutRight", 11767);
-		set(markerID, "MkrReadoutBottom", 615);
+		set(markerID, "MkrReadoutRight", 11743);
+		set(markerID, "MkrReadoutBottom", 591);
 		set(markerID, "MkrReadoutTop", -125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1131,8 +1131,8 @@ markerID = get_new(traceID, "MarkerNew", "m4", "550000000.0000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 9000);
-		set(markerID, "MkrReadoutRight", 10435);
-		set(markerID, "MkrReadoutBottom", 615);
+		set(markerID, "MkrReadoutRight", 10411);
+		set(markerID, "MkrReadoutBottom", 591);
 		set(markerID, "MkrReadoutTop", -125);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -1363,8 +1363,8 @@ markerID = get_new(traceID, "MarkerNew", "m1", "2400000000.000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 15122);
-		set(markerID, "MkrReadoutRight", 15212);
-		set(markerID, "MkrReadoutBottom", 5457);
+		set(markerID, "MkrReadoutRight", 15188);
+		set(markerID, "MkrReadoutBottom", 5433);
 		set(markerID, "MkrReadoutTop", 5382);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -3473,7 +3473,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 1504897887);
+		 set(axisID, "Uid", 1748245057);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3569,7 +3569,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 338436252);
+		 set(axisID, "Uid", 1193348191);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -14989,7 +14989,7 @@ goId0 = get_new(pageId, "Text");
 ddWinId = get_new(ddsId, "Window", 313, 212, 1489, 730);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 669265413);
-	set(ddWinId, "PageViewRect_669265413", list(-4054, 7691, 21489, -4152));
+	set(ddWinId, "PageViewRect_669265413", list(-896, 5998, 15490, -1600));
 	set(ddWinId, "PageViewRect_229195906", list(-12076, 6592, 9883, -3589));
 	set(ddWinId, "PageViewRect_1789194935", list(-10581, 9988, 17532, -3046));
 	set(ddWinId, "PageViewRect_741782586", list(-490, 21551, 21593, 11312));

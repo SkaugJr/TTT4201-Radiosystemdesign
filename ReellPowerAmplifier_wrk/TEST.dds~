@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-11-14T09:59:14Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-11-13T14:56:55Z");
 	set(ddoId, "FileCreatedDateAndTime", "2024-11-13T14:42:32Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
@@ -309,7 +309,7 @@ markerID = get_new(traceID, "MarkerNew", "m1", "2400000000.000000000000000000000
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 2375);
-		set(markerID, "MkrReadoutRight", 4937);
+		set(markerID, "MkrReadoutRight", 4984);
 		set(markerID, "MkrReadoutBottom", 6002);
 		set(markerID, "MkrReadoutTop", 5290);
 		set(markerID, "MkrIndicatorColor", 0);
@@ -568,7 +568,7 @@ traceID = get_new(goId0, "Trace", "plot_vs(mag(S(4,3)), freq)", "X Axis", "Y Axi
 		}
 		set(traceID, "TraceLabelOffset", 100);
 	}
-markerID = get_new(goId0, "LineMarkerNew", "m2", "5.002667e+09", 0, "1438", "", 1, 37);
+markerID = get_new(goId0, "LineMarkerNew", "m2", "2.400000e+09", 0, "950", "", 1, 37);
 // Base Class Object:
 	set(markerID, "Name", "");
 	set(markerID, "Uid", 1234865808);
@@ -648,7 +648,7 @@ markerID = get_new(goId0, "LineMarkerNew", "m2", "5.002667e+09", 0, "1438", "", 
 ddWinId = get_new(ddsId, "Window", 494, 177, 1231, 717);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 659112815);
-	set(ddWinId, "PageViewRect_659112815", list(784, 11623, 12817, 4907));
+	set(ddWinId, "PageViewRect_659112815", list(6077, 11709, 18070, 5015));
 	set(ddWinId, "Frame", list(494, 177, 1231, 717));
 	set(ddWinId, "Maximized", FALSE);
 	set(ddWinId, "ForegroundColor", 0);

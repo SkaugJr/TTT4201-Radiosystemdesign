@@ -41,3 +41,4 @@ GRM18:C1  N__0 N__2 PartNumber=900
 Port:Term3  N__1 0 Num=3 Z=50 Ohm Noise=yes 
 Port:Term4  N__5 0 Num=4 Z=50 Ohm Noise=yes 
 CapJT:Kap1  N__1 N__5 C=33 pF 
+CapJT:Kap2  N__1 N__5 C=82 pF 
