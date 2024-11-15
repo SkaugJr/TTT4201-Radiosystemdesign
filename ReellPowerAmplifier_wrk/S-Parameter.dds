@@ -10,7 +10,7 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2024-11-14T09:54:32Z");
+	set(ddoId, "FileModifiedDateAndTime", "2024-11-15T11:06:49Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
 	set(ddoId, "DefaultDataset", "S_Parameter");
@@ -544,7 +544,7 @@ goId0 = get_new(pageId, "Plot");
 // Graphical Object:
 	set(goId0, "Right", 7017);
 	set(goId0, "Bottom", 3907);
-	set(goId0, "Left", 1662);
+	set(goId0, "Left", 1415);
 	set(goId0, "Top", 487);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
@@ -558,7 +558,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 1088);
+	set(goId0, "LeftMargin", 1335);
 	set(goId0, "RightMargin", 124);
 	set(goId0, "TopMargin", 263);
 	set(goId0, "BottomMargin", 845);
@@ -739,6 +739,46 @@ traceID = get_new(goId0, "Trace", "dB(S21)", "xAxis", "yAxis");
 		}
 		set(traceID, "TraceLabelOffset", 100);
 	}
+traceID = get_new(goId0, "Trace", "dB(S(1,1))", "xAxis", "yAxis");
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 1);
+		set(traceID, "Uid", 1427978718);
+		set(traceID, "UIIndex", 0);
+		set(traceID, "Status", 536913920);
+	}
+// Rect trace:
+	if (traceID != NULL) {
+		set(traceID, "LineThick", 7);
+		set(traceID, "LineType", ddsSolidLineType);
+		set(traceID, "FillPattern", 0);
+		set(traceID, "SymbolType", ddsCircleSymbol);
+		set(traceID, "SymbolsOnOff", FALSE);
+		set(traceID, "DisplaySinglePointSymbols", TRUE);
+		set(traceID, "SymbolsSpacing", 15);
+		set(traceID, "AlwaysDisplayTransitions", FALSE);
+		set(traceID, "SpectralArrowheadsOnOff", TRUE);
+		set(traceID, "LabelSubtracesOnOff", FALSE);
+		set(traceID, "FillHistogramsOnOff", FALSE);
+		set(traceID, "Format", ddsFormatAutomatic);
+		set(traceID, "NumDigits", 3);
+		set(traceID, "Font", "Arial For CAE");
+		set(traceID, "FontSize", 112);
+		set(traceID, "LineColorAutoSequence", FALSE);
+		set(traceID, "LineTypeAutoSequence", FALSE);
+		set(traceID, "SymbolTypeAutoSequence", FALSE);
+		set(traceID, "LineColorAutoSequenceOrder", 3);
+		set(traceID, "LineTypeAutoSequenceOrder", 1);
+		set(traceID, "SymbolTypeAutoSequenceOrder", 2);
+		if (DDSnumTraceTypes > 8) {
+			set(traceID, "NumberOfDensityColors", 16);
+			set(traceID, "DensityColorOffset", 0);
+			set(traceID, "DensityStartColor", 20);
+			set(traceID, "DensitySymbolType", ddsDotSymbol);
+		}
+		set(traceID, "TraceLabelOffset", 100);
+	}
 markerID = get_new(goId0, "LineMarkerNew", "m6", "2.399710e+09", 0, "2157", "", 1, 41);
 // Base Class Object:
 	set(markerID, "Name", "");
@@ -792,8 +832,8 @@ markerID = get_new(goId0, "LineMarkerNew", "m6", "2.399710e+09", 0, "2157", "", 
 		set(markerID, "MkrReadoutFillColor", 0);
 		set(markerID, "MkrReadoutFillPattern", -1);
 		set(markerID, "MkrReadoutLeft", 3250);
-		set(markerID, "MkrReadoutRight", 4527);
-		set(markerID, "MkrReadoutBottom", -159);
+		set(markerID, "MkrReadoutRight", 4734);
+		set(markerID, "MkrReadoutBottom", 8);
 		set(markerID, "MkrReadoutTop", -875);
 		set(markerID, "MkrIndicatorColor", 0);
 		set(markerID, "MkrIndicatorSize", 6);
@@ -3473,7 +3513,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 1748245057);
+		 set(axisID, "Uid", 450298951);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3569,7 +3609,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 1193348191);
+		 set(axisID, "Uid", 267538136);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -3610,6 +3650,114 @@ traceID = get_new(goId0, "Trace", "dB(S21)", "", "");
 		set(traceID, "TraceType", ddsAutomaticTraceType);
 		set(traceID, "Color", 6);
 		set(traceID, "Uid", 1581103541);
+		set(traceID, "UIIndex", 0);
+		set(traceID, "Status", 536913920);
+	}
+	set(goId0, "PlotLogoHideOnOff", FALSE);
+// Initialize plot
+	set(goId0, "InitPlot", 0);
+goId0 = get_new(pageId, "Listing");
+// Base Class Object:
+	set(goId0, "Name", "");
+	set(goId0, "Uid", 1969535600);
+// Graphical Object:
+	set(goId0, "Right", 33352);
+	set(goId0, "Bottom", 1420);
+	set(goId0, "Left", 27750);
+	set(goId0, "Top", -2000);
+	set(goId0, "Zrot", 0);
+	set(goId0, "Yrot", 0);
+	set(goId0, "Xrot", 0);
+	set(goId0, "Status", 0);
+	set(goId0, "LineColor", 0);
+	set(goId0, "LineType", 0);
+	set(goId0, "LineWidth", 7);
+// Box...
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+// Plot base...
+	set(goId0, "LegendOnOff", TRUE);
+	set(goId0, "LeftMargin", 13);
+	set(goId0, "RightMargin", 13);
+	set(goId0, "TopMargin", 0);
+	set(goId0, "BottomMargin", 13);
+// Listing column:
+	set(goId0, "ListingFont", "Arial For CAE");
+	set(goId0, "ListingFontSize", 140);
+	set(goId0, "Format", ddsFormatAutomatic);
+	set(goId0, "NumDigits", 3);
+	set(goId0, "OutlineOnOff", TRUE);
+	set(goId0, "OutlineColor", 0);
+	set(goId0, "LabelOnOff", TRUE);
+	set(goId0, "OutlineLineType", ddsSolidLineType);
+	set(goId0, "OutlineThickness", 14);
+	set(goId0, "VerticalScroll", 0);
+	set(goId0, "ShowIndependentData", TRUE);
+	set(goId0, "SuppressTable", FALSE);
+	set(goId0, "AutoSizeListingWidth", FALSE);
+	set(goId0, "DisplayUnitsOnOff", FALSE);
+	set(goId0, "TransposeData", FALSE);
+// Plot Title...
+	set(goId0, "Title", "");
+	set(goId0, "TitleFont", "Arial For CAE");
+	set(goId0, "TitleFontSize", 247);
+	set(goId0, "TitleColor", 0);
+axisID = get_new(goId0, "Axis", ddsXaxis, "");
+// Axis...
+	if (axisID != NULL) {
+		 set(axisID, "Uid", 1048351743);
+		 set(axisID, "Color", 104);
+		 set(axisID, "UserLabel", "");
+		 set(axisID, "LabelColor", 0);
+		 set(axisID, "TicksOnOff", TRUE);
+		 set(axisID, "GridOnOff", TRUE);
+		 set(axisID, "LabelsOnOff", TRUE);
+		 set(axisID, "FontSize", 140);
+		 set(axisID, "LineThick", 7);
+		 set(axisID, "LineType", 0);
+		 set(axisID, "TickFontSize", 112);
+		 set(axisID, "AutoscaleOnOff", TRUE);
+		 set(axisID, "MinValue", -1);
+		 set(axisID, "MaxValue", 1);
+		 set(axisID, "StepSize", 1);
+		 set(axisID, "Logarithmic", FALSE);
+		 set(axisID, "Font", "Arial For CAE");
+		 set(axisID, "Format", ddsFormatAutomatic);
+		 set(axisID, "NumDigits", 3);
+	}
+traceID = get_new(goId0, "Trace", "MAG", "", "");
+// Text trace:
+	if (traceID != NULL)
+		set(traceID, "ComplexNumberFormat", ddsComplexFormatMagPhase);
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 5);
+		set(traceID, "Uid", 1389051892);
+		set(traceID, "UIIndex", 0);
+		set(traceID, "Status", 536913920);
+	}
+traceID = get_new(goId0, "Trace", "dB(S21)", "", "");
+// Text trace:
+	if (traceID != NULL)
+		set(traceID, "ComplexNumberFormat", ddsComplexFormatMagPhase);
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 6);
+		set(traceID, "Uid", 767404360);
+		set(traceID, "UIIndex", 0);
+		set(traceID, "Status", 536913920);
+	}
+traceID = get_new(goId0, "Trace", "dB(S(1,1))", "", "");
+// Text trace:
+	if (traceID != NULL)
+		set(traceID, "ComplexNumberFormat", ddsComplexFormatMagPhase);
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 1);
+		set(traceID, "Uid", 1905609499);
 		set(traceID, "UIIndex", 0);
 		set(traceID, "Status", 536913920);
 	}
@@ -14989,7 +15137,7 @@ goId0 = get_new(pageId, "Text");
 ddWinId = get_new(ddsId, "Window", 313, 212, 1489, 730);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 669265413);
-	set(ddWinId, "PageViewRect_669265413", list(-896, 5998, 15490, -1600));
+	set(ddWinId, "PageViewRect_669265413", list(18137, 4734, 34687, -2901));
 	set(ddWinId, "PageViewRect_229195906", list(-12076, 6592, 9883, -3589));
 	set(ddWinId, "PageViewRect_1789194935", list(-10581, 9988, 17532, -3046));
 	set(ddWinId, "PageViewRect_741782586", list(-490, 21551, 21593, 11312));
